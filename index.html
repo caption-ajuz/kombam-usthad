@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ശൈഖുനാ കെ.പി. മുഹമ്മദ് മുസ്ലിയാർ കൊമ്പം — ജീവിതാനുഭവങ്ങൾ</title>
+<meta name="description" content="ശൈഖുനാ കൻസുൽ ഫുഖഹാഅ് കെ.പി. മുഹമ്മദ് മുസ്ലിയാർ കൊമ്പം — ജീവിതാനുഭവങ്ങൾ, ദർസ്, സ്ഥാപനങ്ങൾ, രചനകൾ.">
+<meta name="theme-color" content="#0B342F">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ശൈഖുനാ കെ.പി. മുഹമ്മദ് മുസ്ലിയാർ കൊമ്പം — ജീവിതാനുഭവങ്ങൾ">
+<meta property="og:description" content="കടല വിറ്റ ബാലനിൽ നിന്ന് ആയിരങ്ങൾക്ക് തണലേകുന്ന ഗുരുനാഥനിലേക്ക്.">
+<meta property="og:image" content="images/hero.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="image" href="images/hero.webp">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Noto+Sans+Malayalam:wght@400;600&family=Noto+Serif+Malayalam:wght@500;700&display=swap" rel="stylesheet">
+<style>
+/* =========================================================
+   DESIGN TOKENS
+   ========================================================= */
+:root{
+  --deep:#0B342F;      /* hero + books background */
+  --deep-2:#072623;
+  --ink:#16231F;       /* body text */
+  --muted:#5B6B66;
+  --paper:#F3F6F4;     /* page background */
+  --card:#FFFFFF;
+  --mist:#E2EAE6;
+  --line:#D5DFDA;
+  --brass:#B08A3E;     /* accent on dark */
+  --brass-dk:#86671F;  /* accent on light (AA contrast) */
+  --wa:#178F49;
+  --serif:'Noto Serif Malayalam','Manjari','Kartika',serif;
+  --sans:'Noto Sans Malayalam','Manjari','Kartika',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --arabic:'Amiri','Noto Naskh Arabic','Geeza Pro','Traditional Arabic',serif;
+  --shadow:0 1px 2px rgba(11,52,47,.06),0 10px 28px -10px rgba(11,52,47,.22);
+  --pad:20px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:104px}
+@media (min-width:1100px){html{scroll-padding-top:84px}}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.9;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--brass);outline-offset:2px;border-radius:4px}
+.ar{font-family:var(--arabic);font-size:1.18em;line-height:1.7}
+
+/* =========================================================
+   HEADER  (sticky: brand, search, books link, section chips)
+   ========================================================= */
+.hdr{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);-webkit-backdrop-filter:saturate(1.4) blur(14px);backdrop-filter:saturate(1.4) blur(14px);border-bottom:1px solid var(--line)}
+.bar{position:relative;display:flex;align-items:center;justify-content:space-between;gap:10px;height:52px;padding:0 max(var(--pad),env(safe-area-inset-left)) 0 max(var(--pad),env(safe-area-inset-right))}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--serif);font-weight:700;font-size:16px;line-height:1.2;white-space:nowrap;min-width:0}
+.brand span:last-child{overflow:hidden;text-overflow:ellipsis}
+.brand .mark{flex:none;width:18px;height:24px;border:2px solid var(--brass);border-radius:50% 50% 3px 3px / 42% 42% 3px 3px}
+.acts{display:flex;align-items:center;gap:8px;flex:none}
+.icon-btn{width:40px;height:40px;display:grid;place-items:center;border:0;border-radius:50%;background:transparent;cursor:pointer;transition:background .2s}
+.icon-btn:hover,.icon-btn[aria-expanded="true"]{background:var(--mist)}
+.icon-btn svg{width:21px;height:21px}
+.pill{display:inline-flex;align-items:center;height:36px;padding:0 16px;border-radius:999px;background:var(--deep);color:#fff;text-decoration:none;font-size:14px;font-weight:600;line-height:1;transition:background .2s}
+.pill:hover{background:var(--deep-2)}
+.progress{position:absolute;left:0;right:0;bottom:-1px;height:3px;pointer-events:none}
+.progress i{display:block;height:100%;width:100%;background:var(--brass);transform:scaleX(0);transform-origin:left}
+
+.search{border-top:1px solid var(--line);padding:8px max(var(--pad),env(safe-area-inset-left));animation:drop .22s ease-out}
+.search[hidden]{display:none}
+@keyframes drop{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+.search-row{display:flex;align-items:center;gap:6px;max-width:720px;margin:0 auto}
+.search input{flex:1;min-width:0;height:42px;border:1px solid var(--line);border-radius:12px;background:#fff;padding:0 14px;font:inherit;font-size:16px;color:var(--ink)}
+.search input:focus{outline:2px solid var(--brass);outline-offset:0;border-color:transparent}
+.count{min-width:54px;text-align:center;font-size:13px;color:var(--muted);white-space:nowrap}
+.search .icon-btn{width:38px;height:38px}
+
+.chips-wrap{display:grid;grid-template-rows:1fr;transition:grid-template-rows .28s ease}
+.hdr.compact .chips-wrap{grid-template-rows:0fr}
+.chips{min-height:0;overflow-x:auto;overflow-y:hidden;display:flex;gap:8px;padding:0 var(--pad);scrollbar-width:none;-webkit-overflow-scrolling:touch;scroll-snap-type:x proximity}
+.chips::-webkit-scrollbar{display:none}
+.chips a{flex:none;scroll-snap-align:center;height:34px;margin:0 0 8px;padding:0 14px;display:inline-flex;align-items:center;border-radius:999px;border:1px solid var(--line);background:#fff;text-decoration:none;font-size:14px;line-height:1;white-space:nowrap;color:var(--muted);transition:background .2s,color .2s,border-color .2s}
+.chips a.on{background:var(--deep);border-color:var(--deep);color:#fff}
+.chips a.bk{border-color:var(--brass);color:var(--brass-dk)}
+.chips a.bk.on{background:var(--brass);border-color:var(--brass);color:#fff}
+@media (min-width:1100px){.chips-wrap{display:none}}
+@media (min-width:640px){.brand{font-size:18px}}
+
+/* =========================================================
+   HERO
+   ========================================================= */
+.hero{position:relative;background-color:var(--deep);color:#fff;padding:40px var(--pad) 84px;overflow:hidden;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72'%3E%3Cg fill='none' stroke='%23B08A3E' stroke-opacity='.15'%3E%3Crect x='16' y='16' width='40' height='40'/%3E%3Crect x='16' y='16' width='40' height='40' transform='rotate(45 36 36)'/%3E%3C/g%3E%3C/svg%3E"),radial-gradient(90% 70% at 50% 0%,#12524A 0%,rgba(11,52,47,0) 70%)}
+.hero-in{position:relative;max-width:1080px;margin:0 auto;display:grid;gap:30px;justify-items:center;text-align:center}
+.arch{width:min(70vw,290px);aspect-ratio:4/5.3;padding:9px;border:1.5px solid var(--brass);border-radius:50% 50% 24px 24px / 37.7% 37.7% 24px 24px;background:rgba(255,255,255,.04);box-shadow:0 30px 60px -28px rgba(0,0,0,.6)}
+.arch img{width:100%;height:100%;object-fit:cover;object-position:center 18%;border-radius:50% 50% 16px 16px / 37.7% 37.7% 16px 16px;background:var(--deep-2)}
+.title-line{margin:0 0 6px;font-family:var(--serif);font-weight:500;font-size:clamp(17px,4.6vw,21px);color:#D9B865;line-height:1.5}
+h1.name{margin:0;font-family:var(--serif);font-weight:700;font-size:clamp(30px,8.4vw,52px);line-height:1.38}
+.place{margin:6px 0 0;color:rgba(255,255,255,.78);font-size:15px}
+.intro{margin:20px auto 0;max-width:36ch;font-size:17px;line-height:1.85;color:rgba(255,255,255,.92)}
+.roles{list-style:none;margin:20px 0 0;padding:0;display:flex;flex-wrap:wrap;justify-content:center;gap:8px}
+.roles li{padding:5px 13px;border:1px solid rgba(217,184,101,.5);border-radius:999px;font-size:13.5px;line-height:1.6;color:#F1E3BC}
+.cta{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:48px;padding:0 24px;border-radius:14px;text-decoration:none;font-weight:600;font-size:16px;line-height:1.2;border:1.5px solid transparent;cursor:pointer;transition:transform .2s,background .2s,box-shadow .2s}
+.btn:active{transform:scale(.98)}
+.btn-gold{background:var(--brass);color:#fff}
+.btn-gold:hover{background:#9C7830}
+.btn-ghost{border-color:rgba(255,255,255,.35);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.08)}
+@media (min-width:860px){
+  .hero{padding:72px 32px 120px}
+  .hero-in{grid-template-columns:1.15fr .85fr;gap:64px;text-align:left;justify-items:start;align-items:center}
+  .hero-photo{order:2;justify-self:center}
+  .arch{width:min(100%,340px)}
+  .intro{margin-left:0;max-width:42ch}
+  .roles,.cta{justify-content:flex-start}
+}
+
+/* =========================================================
+   INSTITUTION PHOTO BLOCKS
+   ========================================================= */
+.inst{position:relative;margin:-52px auto 0;max-width:1080px;padding:0 var(--pad)}
+.inst-grid{display:grid;gap:18px}
+@media (min-width:760px){.inst-grid{grid-template-columns:1fr 1fr;gap:24px}}
+.inst-card{display:block;background:var(--card);border-radius:22px;overflow:hidden;text-decoration:none;box-shadow:var(--shadow);transition:transform .25s,box-shadow .25s}
+.inst-card:hover{transform:translateY(-3px)}
+.inst-card .ph{aspect-ratio:16/10;background:var(--mist);overflow:hidden}
+.inst-card img{width:100%;height:100%;object-fit:cover}
+.inst-card .tx{padding:18px 20px 22px}
+.inst-card h2{margin:0 0 6px;font-family:var(--serif);font-weight:700;font-size:20px;line-height:1.5}
+.inst-card .loc{margin:0 0 8px;color:var(--brass-dk);font-size:14px;font-weight:600}
+.inst-card p{margin:0;font-size:15px;line-height:1.8;color:var(--muted)}
+.inst-card .more{display:inline-block;margin-top:12px;font-size:14.5px;font-weight:600;color:var(--deep);border-bottom:1.5px solid var(--brass)}
+
+/* =========================================================
+   ARTICLE
+   ========================================================= */
+.article-wrap{max-width:1160px;margin:0 auto;padding:56px var(--pad) 24px}
+.article-head{max-width:720px;margin:0 auto 34px;scroll-margin-top:104px}
+@media (min-width:1100px){.article-head{scroll-margin-top:84px;margin:0 0 34px;max-width:none;padding-left:296px}}
+.article-head h2{margin:0;font-family:var(--serif);font-weight:700;font-size:clamp(28px,7vw,40px);line-height:1.4}
+.article-head .full{margin:8px 0 0;color:var(--muted);font-size:16px;line-height:1.7}
+.article-head .meta{margin:10px 0 0;font-size:14px;color:var(--brass-dk);font-weight:600}
+.layout{display:block}
+@media (min-width:1100px){.layout{display:grid;grid-template-columns:240px minmax(0,720px);gap:56px;justify-content:start}}
+.rail{display:none}
+@media (min-width:1100px){
+  .rail{display:block;position:sticky;top:96px;align-self:start;max-height:calc(100vh - 120px);overflow:auto;padding-right:6px;scrollbar-width:thin}
+  .rail ol{list-style:none;margin:0;padding:0;border-left:2px solid var(--line)}
+  .rail a{display:block;padding:7px 0 7px 16px;margin-left:-2px;border-left:2px solid transparent;text-decoration:none;font-size:14.5px;line-height:1.55;color:var(--muted);transition:color .2s,border-color .2s}
+  .rail a:hover{color:var(--ink)}
+  .rail a.on{color:var(--deep);font-weight:600;border-left-color:var(--brass)}
+  .rail a.bk{margin-top:14px;color:var(--brass-dk);font-weight:600}
+}
+.prose{max-width:720px;margin:0 auto}
+@media (min-width:1100px){.prose{margin:0}}
+.prose p{margin:0 0 1.15em;hyphens:auto}
+.prose strong{font-weight:600}
+.prose h2{display:flex;align-items:flex-start;gap:14px;margin:2.6em 0 .9em;font-family:var(--serif);font-weight:700;font-size:clamp(21px,5.4vw,26px);line-height:1.55;scroll-margin-top:104px}
+@media (min-width:1100px){.prose h2{scroll-margin-top:84px}}
+.prose h2:first-child{margin-top:0}
+.prose h2 .num{flex:none;width:36px;height:44px;margin-top:2px;display:grid;place-items:center;padding-top:8px;border:1.5px solid var(--brass);border-radius:50% 50% 5px 5px / 44% 44% 5px 5px;font-size:16px;font-weight:700;line-height:1;color:var(--brass-dk);background:#fff}
+
+.pull{position:relative;margin:1.8em 0;padding:22px 22px 22px 26px;background:var(--card);border-radius:4px 18px 18px 4px;border-left:4px solid var(--brass);box-shadow:var(--shadow)}
+.pull::before{content:"“";position:absolute;top:-6px;right:18px;font-family:var(--serif);font-size:72px;line-height:1;color:var(--brass);opacity:.35}
+.pull p{margin:0;font-family:var(--serif);font-weight:500;font-size:clamp(19px,5vw,22px);line-height:1.8;color:var(--deep)}
+.ar-quote{margin:1.8em 0;padding:22px 18px;text-align:center;background:var(--mist);border-radius:16px}
+.ar-quote p{margin:0;font-family:var(--arabic);font-weight:700;font-size:clamp(22px,6vw,27px);line-height:1.9;color:var(--deep)}
+.ar-quote .ar{font-size:1em}
+.verse{margin:1.8em 0;padding:22px 18px;text-align:center;background:var(--mist);border-radius:16px;font-family:var(--arabic)}
+.verse p{margin:0;font-size:clamp(20px,5.4vw,24px);line-height:2.1;color:var(--deep)}
+.verse p+p{margin-top:.2em}
+.titles{list-style:none;margin:1.6em 0;padding:0;display:grid;gap:10px}
+.titles li{padding:14px 18px;background:var(--card);border-radius:14px;box-shadow:var(--shadow);text-align:center;font-family:var(--arabic);font-weight:700;font-size:clamp(20px,5.4vw,23px);line-height:1.8;color:var(--deep)}
+.dialog{margin:1.8em 0;display:grid;gap:10px}
+.dialog p{margin:0;max-width:84%;padding:11px 16px;border-radius:18px;font-size:16.5px;line-height:1.7}
+.dialog .q{justify-self:start;background:var(--mist);border-bottom-left-radius:4px}
+.dialog .a{justify-self:end;background:var(--deep);color:#fff;border-bottom-right-radius:4px}
+.family{display:grid;gap:14px;margin:1.4em 0 1.6em}
+@media (min-width:560px){.family{grid-template-columns:1fr 1fr}}
+.family>div{background:var(--card);border-radius:16px;padding:16px 20px;box-shadow:var(--shadow)}
+.family h3{margin:0 0 6px;font-family:var(--serif);font-size:17px;color:var(--brass-dk)}
+.family ul{list-style:none;margin:0;padding:0}
+.family li{padding:5px 0;border-top:1px solid var(--line);font-size:16px;line-height:1.7}
+.family li:first-child{border-top:0}
+.dua{margin:2.4em 0 0;padding:28px 22px;text-align:center;background:var(--deep);color:#fff;border-radius:22px}
+.dua p{margin:0 0 1em;line-height:1.95}
+.dua .amin{margin:.6em 0 0;font-family:var(--arabic);font-size:28px;font-weight:700;color:#D9B865}
+.photo{margin:2em calc(var(--pad) * -1);position:relative}
+.photo img{width:100%;object-fit:cover;object-position:center 22%;background:var(--mist);cursor:zoom-in}
+.photo figcaption{padding:8px var(--pad) 0;font-size:14px;color:var(--muted);line-height:1.6}
+@media (min-width:760px){.photo{margin:2.2em 0}.photo img{border-radius:18px;box-shadow:var(--shadow)}.photo figcaption{padding-left:4px}}
+
+.inst-card .links{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:14px}
+.inst-card .more{margin-top:0}
+.inst-card .more.ext{color:var(--brass-dk);border-bottom-color:transparent;text-decoration:underline;text-underline-offset:3px}
+.tags{list-style:none;margin:14px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.tags li{padding:3px 11px;border-radius:999px;background:var(--mist);font-size:13px;line-height:1.7;color:var(--deep)}
+.event{max-width:1080px;margin:26px auto 0;padding:0 var(--pad)}
+.event[hidden]{display:none}
+.event-in{display:grid;grid-template-columns:118px 1fr;gap:18px;align-items:center;padding:16px;background:var(--deep);color:#fff;border-radius:22px;box-shadow:var(--shadow)}
+.poster{padding:0;border:0;background:none;border-radius:12px;overflow:hidden;cursor:zoom-in;line-height:0}
+.poster img{width:100%;height:auto;border-radius:12px}
+.event .when{display:inline-block;margin:0 0 8px;padding:1px 12px;border-radius:999px;background:var(--brass);color:#fff;font-size:13px;font-weight:600;line-height:1.8}
+.event h2{margin:0;font-family:var(--serif);font-weight:700;font-size:clamp(18px,4.8vw,24px);line-height:1.55}
+.ev-meta{margin:4px 0 0;color:rgba(255,255,255,.8);font-size:14.5px;line-height:1.7}
+.ev-dates{display:flex;flex-wrap:wrap;gap:4px 14px;margin:8px 0 14px;font-size:15px;font-weight:600;color:#F1E3BC;line-height:1.7}
+.event .share{min-height:42px;padding:0 20px;font-size:15px}
+@media (min-width:640px){.event-in{grid-template-columns:190px 1fr;gap:28px;padding:22px 28px}}
+.share-sm{display:inline-flex;align-items:center;gap:8px;margin-top:14px;height:40px;padding:0 16px;border:1px solid var(--line);border-radius:999px;background:#fff;cursor:pointer;font-size:14.5px;font-weight:600;color:var(--deep)}
+.share-sm svg{width:17px;height:17px}
+.share-sm:hover{background:var(--mist)}
+.photo img{height:auto;max-height:80vh;aspect-ratio:auto}
+.photo-pair{display:grid;gap:0;margin:2em calc(var(--pad) * -1)}
+.photo-pair .photo{margin:0}
+.photo-pair .photo+.photo{margin-top:22px}
+@media (min-width:760px){.photo-pair{margin:2.2em 0;grid-template-columns:1fr 1fr;gap:16px}.photo-pair .photo+.photo{margin-top:0}.photo-pair .photo{margin:0}}
+mark.hit{background:#F3E1A6;color:inherit;border-radius:3px;padding:0 1px}
+mark.hit.cur{background:var(--brass);color:#fff}
+
+/* =========================================================
+   BOOKS
+   ========================================================= */
+.books{background:var(--deep);color:#fff;padding:72px var(--pad) 88px;margin-top:56px;scroll-margin-top:52px}
+.books-in{max-width:1080px;margin:0 auto}
+.books h2{margin:0;font-family:var(--serif);font-weight:700;font-size:clamp(28px,7vw,38px);line-height:1.4}
+.books .lead{margin:10px 0 34px;max-width:52ch;color:rgba(255,255,255,.8);font-size:16.5px;line-height:1.85}
+.book-list{display:grid;gap:18px}
+@media (min-width:700px){.book-list{grid-template-columns:1fr 1fr}}
+@media (min-width:1040px){.book-list{grid-template-columns:repeat(3,1fr)}}
+.book{display:grid;grid-template-columns:112px 1fr;gap:6px 18px;align-content:start;padding:18px;background:var(--card);color:var(--ink);border-radius:20px;box-shadow:0 20px 40px -24px rgba(0,0,0,.55)}
+.book .info{min-width:0}
+.book h3{margin:0 0 4px;font-family:var(--serif);font-weight:700;font-size:18px;line-height:1.55}
+.book h3[lang="ar"]{font-family:var(--arabic);font-size:21px;line-height:1.7}
+.book .kind{display:inline-block;margin-bottom:6px;padding:1px 10px;border-radius:999px;background:var(--mist);color:var(--deep);font-size:12.5px;font-weight:600;line-height:1.8}
+.book p{margin:0;font-size:15px;line-height:1.8;color:var(--muted)}
+.book .order{grid-column:1/-1;margin-top:10px;min-height:50px;background:var(--wa);color:#fff;border-radius:14px;font-size:15.5px}
+.book .order:hover{background:#12783D}
+.book .order svg{width:22px;height:22px;flex:none}
+.cover{position:relative;width:100%;aspect-ratio:3/4;border-radius:5px 12px 12px 5px;display:grid;place-items:center;padding:20px 12px 24px;text-align:center;color:#fff;overflow:hidden;box-shadow:0 12px 22px -10px rgba(0,0,0,.5),inset 4px 0 0 rgba(255,255,255,.10)}
+.cover::before{content:"";position:absolute;inset:7px 7px 7px 10px;border:1px solid rgba(217,184,101,.75);border-radius:50% 50% 5px 5px / 32% 32% 5px 5px;pointer-events:none}
+.cover .ct{position:relative;font-family:var(--serif);font-weight:700;font-size:15px;line-height:1.5;padding-top:14px}
+.cover .ct[lang="ar"]{font-family:var(--arabic);font-size:17px;line-height:1.7}
+.cover.long .ct{font-size:12.5px}
+.cover.long .ct[lang="ar"]{font-size:14px}
+.cover small{position:absolute;left:0;right:0;bottom:12px;font-size:10px;color:#E8D3A0;letter-spacing:.02em}
+.c0{background:linear-gradient(160deg,#12574D,#082A26)}
+.c1{background:linear-gradient(160deg,#1D4B66,#0E2433)}
+.c2{background:linear-gradient(160deg,#6A4522,#33200F)}
+.c3{background:linear-gradient(160deg,#465A26,#222C12)}
+img.cover{object-fit:cover;padding:0}
+img.cover::before{display:none}
+.books-note{margin:28px 0 0;color:rgba(255,255,255,.7);font-size:14.5px}
+
+footer{padding:34px var(--pad) calc(34px + env(safe-area-inset-bottom));text-align:center;color:var(--muted);font-size:14.5px;background:var(--paper)}
+footer a{color:var(--deep);font-weight:600}
+
+/* back-to-top + lightbox */
+.top{position:fixed;right:16px;bottom:calc(18px + env(safe-area-inset-bottom));z-index:40;width:46px;height:46px;border:0;border-radius:50%;background:var(--deep);color:#fff;display:grid;place-items:center;cursor:pointer;box-shadow:var(--shadow);opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity .25s,transform .25s,visibility .25s}
+.top.show{opacity:1;visibility:visible;transform:none}
+.top svg{width:20px;height:20px}
+.lb{position:fixed;inset:0;z-index:100;background:rgba(4,20,18,.94);display:grid;place-items:center;padding:16px}
+.lb[hidden]{display:none}
+.lb img{max-width:100%;max-height:88vh;border-radius:8px;object-fit:contain}
+.lb button{position:absolute;top:calc(10px + env(safe-area-inset-top));right:12px;width:44px;height:44px;border:0;border-radius:50%;background:rgba(255,255,255,.14);color:#fff;font-size:26px;line-height:1;cursor:pointer}
+
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media print{.hdr,.top,.books,.inst,.hero{display:none}}
+</style>
+</head>
+<body id="top">
+
+<header class="hdr" id="hdr">
+  <div class="bar">
+    <a class="brand" href="#top" aria-label="ശൈഖുനാ കൊമ്പം — മുകളിലേക്ക്"><span class="mark" aria-hidden="true"></span><span>ശൈഖുനാ കൊമ്പം</span></a>
+    <div class="acts">
+      <button class="icon-btn" id="searchBtn" type="button" aria-label="ലേഖനത്തിൽ തിരയുക" aria-expanded="false" aria-controls="search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.6-3.6"/></svg>
+      </button>
+      <a class="pill" href="#books">പുസ്തകങ്ങൾ</a>
+    </div>
+    <div class="progress" aria-hidden="true"><i id="bar"></i></div>
+  </div>
+  <div class="search" id="search" hidden role="search">
+    <div class="search-row">
+      <input id="q" type="search" inputmode="search" enterkeyhint="search" autocomplete="off" placeholder="ലേഖനത്തിൽ തിരയുക" aria-label="ലേഖനത്തിൽ തിരയുക">
+      <span class="count" id="count" aria-live="polite"></span>
+      <button class="icon-btn" id="prev" type="button" aria-label="മുമ്പത്തെ ഫലം"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 15l6-6 6 6"/></svg></button>
+      <button class="icon-btn" id="next" type="button" aria-label="അടുത്ത ഫലം"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></button>
+      <button class="icon-btn" id="closeSearch" type="button" aria-label="തിരയൽ അടയ്ക്കുക"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+  </div>
+  <div class="chips-wrap">
+    <nav class="chips" id="chips" aria-label="വിഭാഗങ്ങൾ">
+      <a href="#top" data-t="top">ആമുഖം</a>
+      <a href="#s1" data-t="0">ബാല്യം</a>
+      <a href="#s2" data-t="1">അറിവിലേക്കുള്ള വഴി</a>
+      <a href="#s3" data-t="2">മാട്ടുമ്മൽ–പുതുപ്പറമ്പ്</a>
+      <a href="#s4" data-t="3">ജാമിഅ നൂരിയ്യ</a>
+      <a href="#s5" data-t="4">അൻവരിയ്യയിലേക്ക്</a>
+      <a href="#s6" data-t="5">സുവർണ്ണകാലം</a>
+      <a href="#s7" data-t="6">1996-ലെ വിടവാങ്ങൽ</a>
+      <a href="#s8" data-t="7">ഹസനിയ്യയും ഹിദായയും</a>
+      <a href="#s9" data-t="8">തസവ്വുഫ്</a>
+      <a href="#s10" data-t="9">ഇജാസത്തും യാത്രകളും</a>
+      <a href="#s11" data-t="10">തൂലിക</a>
+      <a href="#s12" data-t="11">ശിഷ്യന്മാർ</a>
+      <a href="#s13" data-t="12">ജീവിതദർശനം</a>
+      <a href="#s14" data-t="13">കുടുംബവും ബഹുമതികളും</a>
+      <a class="bk" href="#books" data-t="books">പുസ്തകങ്ങൾ</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" aria-labelledby="name">
+  <div class="hero-in">
+    <div class="hero-photo">
+      <div class="arch">
+        <img src="images/hero.webp" alt="ശൈഖുനാ കെ.പി. മുഹമ്മദ് മുസ്ലിയാർ കൊമ്പം" width="700" height="930" fetchpriority="high" decoding="async">
+      </div>
+    </div>
+    <div class="hero-text">
+      <p class="title-line">കൻസുൽ ഫുഖഹാഅ്</p>
+      <h1 class="name" id="name">ശൈഖുനാ കെ.പി. മുഹമ്മദ് മുസ്ലിയാർ</h1>
+      <p class="place">കൊമ്പം, പാലക്കാട്</p>
+      <p class="intro">1947-ൽ പാലക്കാട് ജില്ലയിലെ കൊമ്പത്ത് ജനിച്ചു. കടല വിറ്റ ബാലനിൽ നിന്ന് ആയിരങ്ങൾക്ക് തണലേകുന്ന ഗുരുനാഥനായി വളർന്ന ജീവിതം.</p>
+      <ul class="roles">
+        <li>സമസ്ത കേന്ദ്ര മുശാവറ അംഗം</li>
+        <li>ജാമിഅ ഹസനിയ്യ പ്രിൻസിപ്പൽ</li>
+        <li>മർകസുൽ ഹിദായ സെക്രട്ടറി</li>
+      </ul>
+      <div class="cta">
+        <a class="btn btn-gold" href="#article-start">ജീവിതം വായിക്കാം</a>
+        <a class="btn btn-ghost" href="#books">പുസ്തകങ്ങൾ</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURED INSTITUTIONS ============ -->
+<section class="inst" aria-label="സ്ഥാപനങ്ങൾ">
+  <div class="inst-grid">
+    <article class="inst-card">
+      <div class="ph"><img src="images/hidaya.webp" data-full="images/hidaya.webp" alt="മർകസുൽ ഹിദായ ക്യാമ്പസ്, കൊമ്പം" width="960" height="720" loading="lazy" decoding="async"></div>
+      <div class="tx">
+        <h2>മർകസുൽ ഹിദായ</h2>
+        <p class="loc">കൊമ്പം, പാലക്കാട്</p>
+        <p>1996–97 കാലത്ത് സ്വന്തം നാടായ കൊമ്പത്ത് ശൈഖുനാ തുടക്കം കുറിച്ചു. എട്ട് ഏക്കർ ക്യാമ്പസിൽ ഇംഗ്ലീഷ് മീഡിയം വിദ്യാഭ്യാസത്തോടൊപ്പം ഖുർആൻ ഹിഫ്ള് സംവിധാനവും ദഅ്‌വ കോളേജും പ്രവർത്തിക്കുന്നു.</p>
+        <div class="links"><a class="more" href="#s8">ചരിത്രം വായിക്കാം</a><a class="more ext" href="https://www.markazulhidaya.in" target="_blank" rel="noopener">markazulhidaya.in</a></div>
+      </div>
+    </article>
+    <article class="inst-card">
+      <div class="ph"><img src="images/hasaniyya.webp" data-full="images/hasaniyya.webp" alt="ജാമിഅ ഹസനിയ്യ, കല്ലേക്കാട്" width="1600" height="1067" loading="lazy" decoding="async"></div>
+      <div class="tx">
+        <h2>ജാമിഅ ഹസനിയ്യ ഇസ്‌ലാമിയ്യ</h2>
+        <p class="loc">കല്ലേക്കാട്, പാലക്കാട്</p>
+        <p>ശംസുൽ ഉലമ ഇ.കെ. ഹസൻ മുസ്ലിയാരുടെ സ്മരണയിൽ 1994-ൽ സ്ഥാപിതമായ സ്ഥാപനസമുച്ചയം. പാലക്കാട് ടൗണിൽ നിന്ന് 8 കിലോമീറ്റർ അകലെ. 1996-ൽ ശൈഖുനാ ഇവിടെ എത്തി; ഇപ്പോൾ പ്രിൻസിപ്പൽ.</p>
+        <ul class="tags">
+          <li>ശരീഅത്ത് കോളേജ്</li><li>ഹിഫ്ളുൽ ഖുർആൻ കോളേജ്</li><li>അനാഥ-അഗതി മന്ദിരം</li><li>ഹസനിയ്യ അക്കാദമി ഫോർ ആർട്സ് &amp; ഇസ്‌ലാമിക് സ്റ്റഡീസ്</li><li>ഹസനിയ്യ പബ്ലിക് സ്കൂൾ</li><li>കോർഡോവ ഇന്റർനാഷണൽ സ്കൂൾ</li>
+        </ul>
+        <div class="links"><a class="more" href="#s8">ചരിത്രം വായിക്കാം</a></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="event" id="event" hidden aria-label="പരിപാടി">
+  <div class="event-in">
+    <button class="poster" type="button" aria-label="പോസ്റ്റർ വലുതായി കാണുക"><img src="images/event-sharia-block.webp" data-full="images/event-sharia-block.webp" alt="ശരീഅത്ത് ബ്ലോക്ക് ഉദ്ഘാടനവും സ്വലാത്ത് വാർഷികവും — പോസ്റ്റർ" width="900" height="1125" loading="lazy" decoding="async"></button>
+    <div class="ev-tx">
+      <p class="when" id="evWhen"></p>
+      <h2>ശരീഅത്ത് ബ്ലോക്ക് ഉദ്ഘാടനവും സ്വലാത്ത് വാർഷികവും</h2>
+      <p class="ev-meta">മർകസുൽ ഹിദായ, ഹിദായ നഗർ, കൊമ്പം</p>
+      <p class="ev-dates"><span>2026 ഒക്ടോബർ 2, വെള്ളി</span><span>ഒക്ടോബർ 3, ശനി</span></p>
+      <button class="btn btn-gold share" type="button" data-share="event">പങ്കിടുക</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ARTICLE ============ -->
+<main class="article-wrap" id="article">
+  <div class="article-head" id="article-start">
+    <h2>ജീവിതാനുഭവങ്ങൾ</h2>
+    <p class="full">ശൈഖുനാ കൻസുൽ ഫുഖഹാഅ് കെ.പി. മുഹമ്മദ് മുസ്ലിയാർ കൊമ്പം</p>
+    <p class="meta">14 അധ്യായങ്ങൾ, ഏകദേശം 17 മിനിറ്റ് വായന</p>
+    <button class="share-sm" type="button" data-share="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>ഷെയർ ചെയ്യുക</button>
+  </div>
+  <div class="layout">
+    <aside class="rail" aria-label="ഉള്ളടക്കം">
+      <ol>
+        <li><a href="#s1" data-t="0">ബാല്യം</a></li>
+        <li><a href="#s2" data-t="1">അറിവിലേക്കുള്ള വഴി</a></li>
+        <li><a href="#s3" data-t="2">മാട്ടുമ്മൽ–പുതുപ്പറമ്പ്</a></li>
+        <li><a href="#s4" data-t="3">ജാമിഅ നൂരിയ്യ</a></li>
+        <li><a href="#s5" data-t="4">അൻവരിയ്യയിലേക്ക്</a></li>
+        <li><a href="#s6" data-t="5">സുവർണ്ണകാലം</a></li>
+        <li><a href="#s7" data-t="6">1996-ലെ വിടവാങ്ങൽ</a></li>
+        <li><a href="#s8" data-t="7">ഹസനിയ്യയും ഹിദായയും</a></li>
+        <li><a href="#s9" data-t="8">തസവ്വുഫ്</a></li>
+        <li><a href="#s10" data-t="9">ഇജാസത്തും യാത്രകളും</a></li>
+        <li><a href="#s11" data-t="10">തൂലിക</a></li>
+        <li><a href="#s12" data-t="11">ശിഷ്യന്മാർ</a></li>
+        <li><a href="#s13" data-t="12">ജീവിതദർശനം</a></li>
+        <li><a href="#s14" data-t="13">കുടുംബവും ബഹുമതികളും</a></li>
+        <li><a class="bk" href="#books" data-t="books">പുസ്തകങ്ങൾ</a></li>
+      </ol>
+    </aside>
+    <article class="prose" id="prose">
+<h2 id="s1"><span class="num" aria-hidden="true">1</span><span>ജനനം, കുടുംബപാരമ്പര്യം, പിതാവിന്റെ ചരിത്രം, ബാല്യകാലം</span></h2>
+<p>പാലക്കാട് ജില്ലയിലെ മണ്ണാർക്കാട്, കോട്ടോപ്പാടത്തിനടുത്ത കൊമ്പം ദേശത്ത് കൊട്ടമ്പാറ മുകാരി (ബുഖാരി)യുടെയും പാലക്കൽ പാത്തുട്ടി (ഫാത്തിമ)യുടെയും മകനായി 03/12/1947 ബുധനാഴ്ചയാണ് ശൈഖുനാ കെ.പി. മുഹമ്മദ് മുസ്ലിയാർ ജനിച്ചത്.</p>
+<p>ശൈഖുനായുടെ പിതാവിന്റെ പൂർവ്വികർ വളാഞ്ചേരി കൊട്ടമ്പാറ പരി വൈദ്യർ കുടുംബത്തിൽ നിന്നാണ് അരിയൂരിലേക്ക് വന്നത്. കൊട്ടമ്പാറ എന്ന കുടുംബനാമത്തിന്റെ ചുരുക്കമാണ് ‘കെ.പി.’ എന്നറിയപ്പെട്ടത്. പിതാവ് കൊമരംപുത്തൂർ കുഞ്ഞി സീതി തങ്ങളുടെ വലംകൈയായിരുന്നുവെന്നും ഖിലാഫത്ത് പോരാളികളുടെ നേതൃത്വത്തിൽ രൂപപ്പെട്ടിരുന്ന മലയാള രാജ്യത്തിന്റെ മണ്ണാർക്കാട് പ്രവിശ്യയിൽ പ്രധാനപ്പെട്ട പങ്കുവഹിച്ചിരുന്നുവെന്നും പറയപ്പെടുന്നു.</p>
+<p>ബ്രിട്ടീഷ് ഭരണകൂടം അദ്ദേഹത്തെയും മറ്റു നാൽപ്പതോളം പേരെയും ഒരുമിച്ച് വധിക്കാനും കത്തിക്കാനുമായി പദ്ധതിയിട്ടു. ഇന്നത്തെ മണ്ണാർക്കാട് ബസ് സ്റ്റാൻഡ് സ്ഥിതി ചെയ്യുന്ന സ്ഥലത്ത് അതിനായി വിറകുകൾ പോലും ശേഖരിച്ചിരുന്നുവെന്നാണ് വിവരണം. എന്നാൽ കല്ലടി ഖാൻ ബഹദൂർ ഉണ്ണിക്കമ്മു സാഹിബ് അതിനെ ശക്തമായി എതിർത്തതിനെ തുടർന്ന് കൂട്ടക്കൊല ഒഴിവാക്കുകയും അവരെ ബെല്ലാരി ജയിലിലേക്ക് അയക്കുകയും ചെയ്തു. പത്ത് വർഷത്തിനു ശേഷം ആന്തമാനിലേക്ക് നാടുകടത്തപ്പെട്ട പിതാവിന് അവിടെ വണ്ടൂരിൽ ആറ് ഏക്കർ ഭൂമിയുണ്ടായിരുന്നു.</p>
+<p>പിന്നീട് നാട്ടിലേക്ക് തിരിച്ചെത്തിയ അദ്ദേഹം ശൈഖുനായുടെ മാതാവിനെ വിവാഹം കഴിച്ചു. എന്നാൽ ശൈഖുനാ ജനിക്കുന്നതിന് മുമ്പുതന്നെ പിതാവ് മരണപ്പെട്ടു. അരിയൂർ ജുമുഅ മസ്ജിദിന് മുന്നിലാണ് അദ്ദേഹത്തിന്റെ ഖബർ സ്ഥിതി ചെയ്യുന്നത്. സ്വാതന്ത്ര്യസമര സേനാനിയുടെ വിധവ എന്ന നിലയിൽ മാതാവിന് പെൻഷനും ലഭിച്ചിരുന്നു.</p>
+<p>പിതാവില്ലാത്ത ബാല്യമായിരുന്നു ശൈഖുനായുടേത്. പിതാവിന്റെ വീരകഥകൾ മാതാവ് മകന് പറഞ്ഞുകൊടുക്കുമായിരുന്നു. ആ കഥകളും ജീവിതാനുഭവങ്ങളും അദ്ദേഹത്തിന്റെ മനസ്സിൽ വലിയ സ്വാധീനം ചെലുത്തി.</p>
+<p>അഞ്ചാം വയസ്സിൽ കൊൽക്കട്ട അളവി മൊല്ലയിൽ നിന്ന് അലിഫ് പഠിച്ചാണ് ഔപചാരിക വിദ്യാഭ്യാസത്തിന്റെ തുടക്കം. മണ്ണ് പുരട്ടിയ മരപ്പലകയിലായിരുന്നു എഴുത്ത്. പിന്നീട് A4 പേപ്പർ നാലായി മടക്കി ഉപയോഗിച്ചും പഠിപ്പിച്ചു.</p>
+<p>ദാരിദ്ര്യം ജീവിതത്തിന്റെ ഭാഗമായിരുന്ന കാലം. ബാല്യകാല സുഹൃത്തായ ചെക്കമുവിനൊപ്പം അലനല്ലൂർ ചന്തയിൽ വറുത്ത കടല വിറ്റ് വരുമാനം നേടാൻ തീരുമാനിച്ചു. കച്ചവടം കഴിഞ്ഞ് തിരിച്ചുവരുമ്പോൾ നമസ്കാരസമയം മുണ്ടത്തുപള്ളി ജുമുഅ മസ്ജിദിലെത്തി. ഹൗസിൽ വെള്ളം കുറവായിരുന്നതിനാൽ അതിൽ ഇറങ്ങി വുദൂ ചെയ്തു. അപ്പോഴേക്കും ജമാഅത്ത് കഴിഞ്ഞിരുന്നു. ഒരു മസ്ബൂഖിനെ പിന്തുടർന്ന് നമസ്കരിച്ചെങ്കിലും അദ്ദേഹം നമസ്കാരം പൂർത്തിയാക്കിയപ്പോൾ ശൈഖുനായ്ക്ക് ആശയക്കുഴപ്പം ഉണ്ടായി. വിദ്യാർത്ഥികൾ ചിരിക്കുകയും ചെയ്തു.</p>
+<p>ആ സംഭവം അദ്ദേഹത്തിന്റെ ജീവിതത്തിലെ വലിയ വഴിത്തിരിവായി. അറിവില്ലായ്മയുടെ വേദന മനസ്സിലാക്കിയ അദ്ദേഹം, ഇനി പഠിക്കണം എന്ന ശക്തമായ തീരുമാനം എടുത്തു.</p>
+<h2 id="s2"><span class="num" aria-hidden="true">2</span><span>അറിവിന്റെ ആദ്യാക്ഷരങ്ങളും കടലക്കച്ചവടത്തിൽ നിന്ന് ദർസിലേക്കുള്ള വഴിത്തിരിവും</span></h2>
+<p>അറിവിനായുള്ള ആഗ്രഹം ശക്തമായതോടെ മമ്പുറത്തേക്ക് പോകാൻ തീരുമാനിച്ചു. അമ്മാവനിൽ നിന്ന് അഞ്ച് രൂപ കടം വാങ്ങിയാണ് യാത്ര. തിരൂരങ്ങാടി നൂറുൽ ഹുദാ മദ്റസയിൽ അന്വേഷിച്ചപ്പോൾ കക്കാട് ദർസിലേക്ക് നിർദേശം ലഭിച്ചു. അവിടെനിന്ന് ഊരകം കോണിത്തോട് മുക്കന്റെ പള്ളിയിലേക്കും പിന്നീട് വേങ്ങര മട്ടുമ്മൽ പള്ളിയിലേക്കും എത്തി.</p>
+<p>പറമ്പത്ത് കുഞ്ഞിമർക്കാർ മുസ്ലിയാരുടെ കീഴിൽ മട്ടുമ്മലിൽ മൂന്ന് വർഷം പഠിച്ചു. അദ്ദേഹം മൗലാന C.H. ഹൈദ്രോസ് മുസ്ലിയാരുടെ ശിഷ്യനായിരുന്നു. മിസാൻ മുതലുള്ള അടിസ്ഥാന ദർസ് പഠനം അവിടെ പൂർത്തിയാക്കി.</p>
+<p>പഠിക്കാനുള്ള താൽപര്യം അതോടെ അവസാനിച്ചില്ല. മന്തിഖ്, മആനി, ലുഗത്ത്, ഹിസാബ്, ഫലക് തുടങ്ങിയ വിവിധ വിജ്ഞാനശാഖകളും ഖുർആൻ, ഹദീസ്, ഫിഖ്ഹ് തുടങ്ങിയ ദീനീ വിജ്ഞാനങ്ങളും പഠിക്കണമെന്ന ആഗ്രഹം വളർന്നു. അക്കാലത്ത് ഒരു ഗുരുവിൽ നിന്ന് എല്ലാം പഠിക്കുന്ന രീതിയല്ലായിരുന്നു. ഓരോ വിജ്ഞാനശാഖയ്ക്കും അതിൽ പ്രാവീണ്യമുള്ള വ്യത്യസ്ത ഉസ്താദുമാരെ തേടിയായിരുന്നു പഠനം.</p>
+<p>ഇതിനിടയിൽ പലയിടങ്ങളിലേക്കും സഞ്ചരിച്ച് പഠിക്കാൻ അവസരം അന്വേഷിച്ചു. ഒരിക്കൽ കൂട്ടുകാരോടൊപ്പം പടിഞ്ഞാറോട്ട് യാത്ര ചെയ്യുമ്പോൾ ബസിൽ വെച്ച് കുമരംപുത്തൂർ അലി മുസ്ലിയാരെ കണ്ടുമുട്ടി. അറബി, ഉർദു, ഫാർസി തുടങ്ങിയ ഭാഷകളും വിവിധ ശാസ്ത്രങ്ങളും പഠിക്കാനുള്ള തന്റെ ആഗ്രഹം അദ്ദേഹം അറിയിച്ചു. അലി മുസ്ലിയാർ തന്റെ സഹോദരനും ഗുരുനാഥനുമായ കുമരംപുത്തൂർ അബ്ദുറഹ്മാൻ മുസ്ലിയാരെ പരിചയപ്പെടുത്തി.</p>
+<p>പെരിന്തൽമണ്ണയിലെത്തിയ ശേഷം ഉസ്താദിനൊപ്പം യാത്ര തുടർന്നു. ഹോട്ടലിൽ ചായ കഴിച്ചപ്പോൾ അതിന്റെ പണം ഉസ്താദ് തന്നെയാണ് നൽകിയത്. തുടർന്ന് പുതുപ്പറമ്പിലെത്തി. അവിടെ കുമരംപുത്തൂർ അബ്ദുറഹ്മാൻ മുസ്ലിയാരുടെ കീഴിൽ മൂന്ന് വർഷം കൂടി പഠിച്ചു. മാട്ടുമ്മലിലെയും പുതുപ്പറമ്പിലെയും ചേർത്ത് ആറ് വർഷത്തെ ഗൗരവപൂർണ്ണമായ പഠനകാലമായിരുന്നു അത്.</p>
+<p>ആറ് വർഷത്തിനിടയിൽ ഈദുകൾ, റബീഉൽ അവ്വൽ, ശഅ്ബാൻ തുടങ്ങിയ പ്രത്യേക ദിവസങ്ങൾ ഒഴികെ പഠനത്തിൽ നിന്ന് വിട്ടുനിന്ന ദിവസങ്ങൾ വളരെ കുറവായിരുന്നു. കുമരംപുത്തൂർ ഉസ്താദിന്റെ അടുത്ത് സാധാരണ ദർസ് ഗ്രന്ഥങ്ങൾക്ക് പുറമെ <span class="ar" dir="rtl" lang="ar">إعراب الإعراب، هداية النحو، الثمرات الجنية</span> തുടങ്ങിയ വ്യാകരണഗ്രന്ഥങ്ങളും പഠിച്ചു. ബാനത് സുആദിന്റെ മുഖമ്മസ്, വിത്‌രിയ്യ, നുബതിയ്യ ഖുത്ബ തുടങ്ങിയവയും പഠിച്ചു.</p>
+<p>അൽഫിയ്യയിലെ വരികൾ മനഃപാഠമാക്കുകയും ആഴ്ചതോറും ആവർത്തിച്ച് പഠിക്കുകയും ചെയ്തു. ഉർദു ഭാഷ പഠിക്കുന്നതിനായി Pahli, Doosari, Tawarikh-e-Habib-e-Ilahi തുടങ്ങിയ ഗ്രന്ഥങ്ങളും ഉപയോഗിച്ചു. കുമരംപുത്തൂർ ഉസ്താദിന്റെ പ്രധാന ഗുരുനാഥന്മാരിൽ അല്ലാമ തളക്കോട് കുഞ്ഞാലവി മുസ്ലിയാരും അല്ലാമ അബ്ദുറഹ്മാൻ ഫലഫാരിയും ഉണ്ടായിരുന്നു.</p>
+<p>ഈ കാലത്ത് സ്വന്തം പഠനത്തോടൊപ്പം മറ്റുകുട്ടികളെയും വീട്ടിൽ നിന്ന് വിവിധ ദർസുകളിലേക്ക് കൊണ്ടുപോകുന്ന ശീലവും അദ്ദേഹത്തിനുണ്ടായിരുന്നു. പിന്നീട് അനേകം വിദ്യാർത്ഥികളുടെ ജീവിതത്തിൽ അദ്ദേഹം തന്നെ ഗുരുവായി മാറിയതിന്റെ തുടക്കം അവിടെയായിരുന്നു.</p>
+<h2 id="s3"><span class="num" aria-hidden="true">3</span><span>മാട്ടുമ്മൽ–പുതുപ്പറമ്പ്: ആറുവർഷത്തെ വിജ്ഞാനസാധന</span></h2>
+<p>മൂന്ന് വർഷം പുതുപ്പറമ്പിൽ പഠിച്ച ശേഷം കുമരംപുത്തൂർ ഉസ്താദ് പട്ടിക്കാട് ജാമിഅ നൂരിയ്യയിലേക്ക് മാറി. 1967-ൽ ചെറിയൊരു പരീക്ഷയ്ക്ക് ശേഷം ശൈഖുനായും ജാമിഅ നൂരിയ്യയിൽ ആറാം ക്ലാസിൽ ചേർന്നു. E.K. അബൂബക്കർ മുസ്ലിയാരുടെ വിവരണത്തിൽ അത് “ഫിൽജുംല” നിലവാരത്തിലുള്ള പരീക്ഷയായിരുന്നു.</p>
+<p>ഒരു വർഷത്തിനു ശേഷം ഉസ്താദ് കരുവാരകുണ്ടിലേക്ക് മാറി. ശൈഖുനായും അദ്ദേഹത്തെ പിന്തുടർന്നു. മുഖ്തസർ പഠനം പൂർത്തിയാക്കിയ ശേഷം അറബി അധ്യാപക പരീക്ഷ എഴുതാനും ജോലി നേടാനും ആഗ്രഹിച്ചു. സാമ്പത്തിക ബുദ്ധിമുട്ട് അതിന് പിന്നിലുണ്ടായിരുന്നു. പരീക്ഷയിൽ നല്ല വിജയം നേടി.</p>
+<p>കരുവാരകുണ്ടിൽ ഒരു വർഷം കഴിഞ്ഞ ശേഷം കൊടുങ്ങല്ലൂരിലെ മാടവനയിൽ പള്ളി–മദ്റസ ജോലി ലഭിച്ചു. ഇതിനിടയിൽ വിവാഹം കഴിഞ്ഞിരുന്നു. ജീവിതച്ചെലവുകളും ഉത്തരവാദിത്വങ്ങളും വർധിച്ചു. രണ്ട് സഹോദരന്മാർ ചേർന്ന് സ്ഥലം നടത്തുകയായിരുന്നു. അവിടെ കർശനമായ സാഹചര്യങ്ങളും ഉണ്ടായിരുന്നു.</p>
+<p>ഹജ്ജ് പെരുന്നാൾ വരെ അവിടെ തുടരുകയും പിന്നീട് ജോലി വിടുകയും ചെയ്തു. പെരിന്തൽമണ്ണ ബസ് സ്റ്റാൻഡിൽ വെച്ചാണ് വീണ്ടും ശംസുൽ ഉലമ E.K. അബൂബക്കർ മുസ്ലിയാരെ കണ്ടുമുട്ടിയത്.</p>
+<div class="dialog"><p class="q">“എവിടെയാണ്?”</p><p class="a">“കൊടുങ്ങല്ലൂർ.”</p><p class="q">“അവിടെ എന്താണ്?”</p><p class="a">“പള്ളിയും മദ്റസയും.”</p><p class="q">“പഠനം നിർത്തിയത് എന്തിന്?”</p><p class="a">“സാമ്പത്തിക ബുദ്ധിമുട്ട്.”</p></div><p>അപ്പോൾ ശംസുൽ ഉലമ ചോദിച്ചു:</p>
+<blockquote class="pull"><p>എന്നോട് പറയേണ്ടതല്ലേ? പഠനം നിർത്തുന്നതാണോ അതിന്റെ പരിഹാരം?</p></blockquote>
+<p>ആ ചോദ്യം ശൈഖുനായുടെ മനസ്സിൽ ആഴത്തിൽ പതിഞ്ഞു. ജീവിതം മറ്റൊരു വഴിയിലേക്ക് തിരിയുകയായിരുന്നു.</p>
+<h2 id="s4"><span class="num" aria-hidden="true">4</span><span>ജാമിഅ നൂരിയ്യ: പഠനം, ഗുരുനാഥന്മാർ, SSF, സഹപാഠികൾ</span></h2>
+<p>അടുത്ത ദിവസം തന്നെ വെള്ളിമാടുകുന്നിലെത്തി. ഇശാ നമസ്കാരത്തിന് ശേഷം എത്തിയപ്പോൾ ശംസുൽ ഉലമ ഭക്ഷണം കഴിച്ച് കഴിഞ്ഞിരുന്നു. പഠനം പുനരാരംഭിക്കാനുള്ള തന്റെ തീരുമാനം അറിയിച്ചു.</p>
+<p>ശംസുൽ ഉലമ പറഞ്ഞു:</p>
+<blockquote class="ar-quote" dir="rtl" lang="ar"><p>فاتوا البيوت من أبوابها</p></blockquote>
+<p>അതിനുശേഷം പാണക്കാട് തങ്ങളെ കാണാൻ നിർദേശിച്ചു.</p>
+<p>അടുത്ത ദിവസം രാവിലെ 11.30-ഓടെ പാണക്കാട്ടെത്തി പൂക്കോയ തങ്ങളെ കണ്ടു. മുതിർന്നവർ പറയുന്നതനുസരിച്ച് പ്രവർത്തിക്കണമെന്ന് നിർദേശം ലഭിച്ചു. നാട്ടിലെ തങ്ങളുടെ സഹായത്തോടെ മറ്റു ഉമറാക്കളെയും കണ്ടു. ഞായറാഴ്ച കമ്മിറ്റി കൂടേണ്ടതുണ്ടായിരുന്നു. വഴിയരികിലെ നമസ്കാരസ്ഥലത്ത് കാത്തിരിക്കുമ്പോൾ ഉറങ്ങിപ്പോയെങ്കിലും തീരുമാനം ഉറച്ചതായിരുന്നു. ഒടുവിൽ വീണ്ടും ജാമിഅയിലേക്ക് മടങ്ങാനുള്ള അനുമതി ലഭിച്ചു.</p>
+<p>1972-ൽ ഹജ്ജ് പെരുന്നാൾ അവധി കഴിഞ്ഞ് മുത്തവ്വൽ വിദ്യാർത്ഥിയായി ജാമിഅയിൽ തിരിച്ചെത്തി. അന്ന് SSF രൂപീകരണവുമായി ബന്ധപ്പെട്ട ചർച്ചകൾ സജീവമായിരുന്നു. സംഘടനയെക്കുറിച്ച് അധ്യാപകരോട് വളരെ നയതന്ത്രപരമായി വിശദീകരിക്കുകയും സംഘടനയുടെ ഭരണഘടന തയ്യാറാക്കുന്നതിൽ പങ്കാളിയാവുകയും ചെയ്തു.</p>
+<p>SSF പതാകയ്ക്ക് ആദ്യം ചുവപ്പ് നിറം വേണമെന്നായിരുന്നു നിർദേശം. പിന്നീട് അത് നീലയാക്കി. പച്ച–വെള്ള–നീല നിറങ്ങളിലുള്ള ത്രിവർണ്ണ പതാകയുടെ രൂപകൽപ്പനയിൽ ശൈഖുനായുടെ പങ്ക് പ്രധാനമായിരുന്നു. ആദ്യ സംസ്ഥാന കമ്മിറ്റിയിലും അദ്ദേഹം അംഗമായി.</p>
+<p>ജാമിഅയിലെ പ്രധാന ഗുരുനാഥന്മാർ റഈസുൽ മുഹഖിഖീൻ കാനിയത്ത് അഹമ്മദ് മുസ്ലിയാർ, ശംസുൽ ഉലമ E.K. അബൂബക്കർ മുസ്ലിയാർ, കൊട്ടുമല അബൂബക്കർ മുസ്ലിയാർ എന്നിവരായിരുന്നു.</p>
+<p>E.K. ഉസ്താദിൽ നിന്ന് തുഹ്ഫതുൽ മുഹ്താജ്, സ്വഹീഹുൽ ബുഖാരി, റിസാല എന്നിവ പഠിച്ചു. കൊട്ടുമല ഉസ്താദിൽ നിന്ന് സ്വഹീഹുൽ മുസ്ലിം, മഹല്ലി എന്നിവയും കാനിയത്ത് ഉസ്താദിൽ നിന്ന് മുല്ല ഹസൻ, തശ്രീഹുൽ അഫ്ലാക് എന്നിവയും പഠിച്ചു.</p>
+<p>M.T. അബ്ദുല്ല മുസ്ലിയാർ, ഉമർ ഫൈസി മുക്കം, നിറമരുതൂർ മറക്കാർ മുസ്ലിയാർ, A.V. അബ്ദുറഹ്മാൻ ഫൈസി, മൊയ്തീൻ ഫൈസി വക്കോട്, ജലീൽ ഫൈസി പുളളങ്കോട്, ഇബ്രാഹീം പുത്തൂർ ഫൈസി തുടങ്ങിയവർ സഹപാഠികളായിരുന്നു.</p>
+<p>ശൈഖുനായുടെ ബാല്യകാല സുഹൃത്തായിരുന്ന ചെക്കമു, പഠനകാലത്ത് രോഗബാധിതനായി മരണപ്പെട്ടു. ജീവിതത്തിന്റെ തുടക്കത്തിൽ കൂടെയുണ്ടായിരുന്ന സുഹൃത്തിന്റെ വിയോഗവും ആ കാലഘട്ടത്തിന്റെ ഓർമ്മകളിൽ ഒന്നായി.</p>
+<figure class="photo"><img src="images/ev-sahityotsav.webp" alt="SSF കേരള സാഹിത്യോത്സവ് വേദിയിൽ പ്രസംഗിക്കുന്ന ശൈഖുനാ" width="1440" height="959" loading="lazy" decoding="async"><figcaption>SSF കേരള സാഹിത്യോത്സവ്, കായംകുളം, 2026 ജൂലൈ</figcaption></figure>
+<h2 id="s5"><span class="num" aria-hidden="true">5</span><span>ജീവിതപ്പോരാട്ടവും ശംസുൽ ഉലമയിലൂടെ ജാമിഅയിലേക്കുള്ള തിരിച്ചുവരവും</span></h2>
+<p>ജാമിഅയിലെ പഠനത്തിനു ശേഷം പയ്യനടം എടരത്ത് ജോലി ലഭിച്ചു. മാസശമ്പളം പതിനഞ്ച് രൂപയും ഒരു ചാക്ക് അരിയുമായിരുന്നു.</p>
+<p>ഇതിനിടയിലാണ് പൊട്ടച്ചിറ അൻവരിയ്യയിലെ ഫാത്തിമ ബീവി മോളൂർ ഉമർ മുസ്ലിയാർ തന്റെ സ്ഥാപനത്തിലേക്ക് അനുയോജ്യനായ ഒരാളെ അന്വേഷിക്കുന്നത്. സുഹൃത്ത് മുഖേന ശൈഖുനായെക്കുറിച്ച് അറിഞ്ഞു. “പുസ്തകങ്ങളിൽ നല്ല കഴിവുണ്ട്, പല ഭാഷകളും അറിയാം” എന്നായിരുന്നു പരിചയപ്പെടുത്തൽ.</p>
+<p>ഉമർ മുസ്ലിയാർ കമ്മിറ്റി അംഗങ്ങളുമായി സംസാരിച്ച് പുതിയൊരു ക്രമീകരണം നടത്തി. പയ്യനടത്ത് ഏകദേശം ആറാഴ്ച മാത്രമാണ് സേവനം ചെയ്തത്. തുടർന്ന് പൊട്ടച്ചിറ അൻവരിയ്യയിലേക്ക് പോയി.</p>
+<p>അവിടെ K.C. ജമാലുദ്ദീൻ മുസ്ലിയാർ പ്രിൻസിപ്പലായിരുന്നു. ഇത്ര ചെറുപ്പക്കാരനെ അധ്യാപകനായി നിയമിക്കുന്നതിനെക്കുറിച്ച് ചിലർക്ക് ആശങ്കയുണ്ടായിരുന്നു. എന്നാൽ ഫാത്തിമ ബീവിയുടെ മറുപടി ശ്രദ്ധേയമായിരുന്നു:</p>
+<blockquote class="pull"><p>ഇന്നത്തേക്ക് വേണ്ടിയല്ല, നാളേക്കുവേണ്ടിയാണ്.</p></blockquote>
+<p>അൻവരിയ്യയിൽ ആദ്യമായി ജംഉൽ ജവാമിഅ്, മഹല്ലി, മുല്ല ഹസൻ, ഫലക് തുടങ്ങിയ ഗ്രന്ഥങ്ങൾ പഠിപ്പിച്ചു. K.C. ജമാലുദ്ദീൻ മുസ്ലിയാരും മോളൂർ ഇബ്രാഹീം മുസ്ലിയാരും അവിടെ ഉണ്ടായിരുന്നു.</p>
+<p>ഇതിനിടയിൽ സർക്കാർ അറബി അധ്യാപക നിയമനത്തിന് അവസരം ലഭിച്ചു. ശമ്പളം ₹650. അൻവരിയ്യയിൽ ലഭിച്ചിരുന്നത് ₹150 മാത്രം. എന്ത് ചെയ്യണമെന്നറിയാതെ കുമരംപുത്തൂർ ഉസ്താദിനോട് ചോദിച്ചു.</p>
+<p>“ഇവിടെ ജോലി ഉണ്ടല്ലോ; പിന്നെ മറ്റൊരു ജോലി എന്തിന്?” എന്നായിരുന്നു ഉസ്താദിന്റെ ചോദ്യം.</p>
+<p>ഉമ്മയോടും അഭിപ്രായം ചോദിച്ചു. ഉസ്താദിന്റെ നിർദേശം അനുസരിക്കാനായിരുന്നു ഉമ്മയുടെ ഉപദേശം. അങ്ങനെ വലിയ ശമ്പളമുള്ള സർക്കാർ ജോലി ഉപേക്ഷിച്ച് അൻവരിയ്യയിലെ ദീനി സേവനം തുടരുകയായിരുന്നു.</p>
+<h2 id="s6"><span class="num" aria-hidden="true">6</span><span>അൻവരിയ്യയുടെ സുവർണ്ണകാലവും സ്ഥാപനവികസനവും</span></h2>
+<p>1974 മുതൽ 1996 വരെ അൻവരിയ്യയുടെ ചരിത്രത്തിലെ സുവർണ്ണകാലമായി മാറി. K.C. ജമാലുദ്ദീൻ മുസ്ലിയാരുടെ കാലത്തിനു ശേഷം ശൈഖുനാ സ്വന്തം ഗുരുനാഥനായ കുമരംപുത്തൂർ ഉസ്താദിനെ പ്രിൻസിപ്പലായി കൊണ്ടുവന്നു. ഉസ്താദ് പിന്നീട് മാറിയപ്പോൾ ശൈഖുനാ തന്നെ പ്രിൻസിപ്പലായി.</p>
+<p>അൻവരിയ്യ ഒരു വലിയ വിജ്ഞാനകേന്ദ്രമായി വളർന്നു. ദർസ്, വിദ്യാർത്ഥികൾ, അധ്യാപകർ, സ്ഥാപനത്തിന്റെ അടിസ്ഥാനസൗകര്യങ്ങൾ എന്നിവ വികസിച്ചു.</p>
+<p>ഹോസ്റ്റൽ, പുതിയ കെട്ടിടം, പള്ളി വിപുലീകരണം, അടുക്കള, ബാത്ത്റൂമുകൾ തുടങ്ങിയ നിരവധി വികസന പ്രവർത്തനങ്ങൾക്ക് നേതൃത്വം നൽകി. പെങ്ങാട്ടിരിയിലെ മില്ല് വികസിപ്പിച്ചു. പട്ടാമ്പിയിൽ 39 മുറികളുള്ള കെട്ടിടം നിർമ്മിച്ചു.</p>
+<p>ഭൂമിയും കെട്ടിടവും അഫിലിയേഷനും ഒരുക്കി സ്കൂൾ സ്ഥാപിക്കുന്നതിനും നേതൃത്വം നൽകി. <strong>Mu’assasa (MTI)</strong> എന്ന പേരിൽ സ്ഥാപനം വളർന്നു.</p>
+<p>ഇത് ഒരു അധ്യാപകന്റെ ജോലി മാത്രമായിരുന്നില്ല. പഠനവും സ്ഥാപനനിർമാണവും സമൂഹസേവനവും ഒരുമിച്ച് മുന്നോട്ടുകൊണ്ടുപോകുന്ന നേതൃത്വമായിരുന്നു അത്.</p>
+<h2 id="s7"><span class="num" aria-hidden="true">7</span><span>അൻവരിയ്യയിലെ അഭിപ്രായവ്യത്യാസങ്ങളും 1996-ലെ ചരിത്രപരമായ വിടവാങ്ങലും</span></h2>
+<p>കാലക്രമത്തിൽ ചിലർ ശൈഖുനായുടെ സമീപനങ്ങളോട് എതിർപ്പ് പ്രകടിപ്പിച്ചു. എന്നാൽ അദ്ദേഹത്തിന്റെ നിലപാട് വ്യക്തമായിരുന്നു — അധ്യാപകർക്കും വിദ്യാർത്ഥികൾക്കും ആരുമായും ബന്ധപ്പെടാം; എന്നാൽ ക്ലാസുകൾക്ക് അതുമൂലം തടസ്സമുണ്ടാകരുത്. വിവിധ പണ്ഡിതന്മാരെ വിഭാഗീയതയില്ലാതെ സ്ഥാപനത്തിലേക്ക് കൊണ്ടുവരണമെന്നും അദ്ദേഹം വിശ്വസിച്ചു.</p>
+<p>PMK ഫൈസിയെ ക്ഷണിക്കുന്നതുമായി ബന്ധപ്പെട്ട് പ്രശ്നങ്ങൾ ഉണ്ടായി. അതിൽ ശൈഖുനാ ശക്തമായ നിലപാട് സ്വീകരിച്ചു:</p>
+<blockquote class="pull"><p>ഇത് ബീവിയുടെ സ്ഥാപനമാണ്. ഞാൻ ഇതുവരെ ചെയ്തതുപോലെ തന്നെ തുടരും; അല്ലെങ്കിൽ ഞാൻ പോകും.</p></blockquote>
+<p>1996-ൽ ആറു അധ്യാപകരെയും 180 വിദ്യാർത്ഥികളെയും കൂട്ടി അദ്ദേഹം അൻവരിയ്യയിൽ നിന്ന് പുറപ്പെട്ടു.</p>
+<p>പല സ്ഥാപനങ്ങളിൽ നിന്നും ക്ഷണങ്ങൾ വന്നിരുന്നു. എന്നാൽ പാലക്കാട് ജില്ലയിൽ ദീനീ പ്രവർത്തനത്തിന് പുതിയ ഉണർവ് നൽകണമെന്ന ലക്ഷ്യത്തോടെ ഹസനിയ്യയെയാണ് അദ്ദേഹം തെരഞ്ഞെടുത്തത്.</p>
+<p>അങ്ങനെ അൻവരിയ്യയിലെ ദീർഘകാല സേവനത്തിന് ശേഷം മറ്റൊരു വലിയ അധ്യായം ആരംഭിച്ചു.</p>
+<h2 id="s8"><span class="num" aria-hidden="true">8</span><span>ഹസനിയ്യയുടെ നേതൃത്വം, മർകസുൽ ഹിദായ, പാലക്കാടിന്റെ സാമൂഹിക വികസനം</span></h2>
+<p>മൗലാന E.K. ഹസൻ മുസ്ലിയാരുടെ പ്രവർത്തനമേഖലയായിരുന്നു പാലക്കാട്. കല്ലേക്കാട് ജാമിഅ ഹസനിയ്യയ്ക്ക് ശക്തമായ നേതൃത്വം ആവശ്യമായ സമയത്താണ് ശൈഖുനാ അവിടെയെത്തിയത്.</p>
+<p>ജന്നത്തുൽ ഉലൂമിന്റെ ദീനീ പാരമ്പര്യം ഹസനിയ്യ ഏറ്റെടുത്തു. പിന്നീട് അത് ശരീഅത്ത് കോളേജ്, ദഅ്‌വ കോളേജ്, ഇംഗ്ലീഷ് മീഡിയം സ്കൂൾ, വിമൻസ് അക്കാദമി തുടങ്ങിയ മേഖലകളിലേക്ക് വളർന്നു. അൽ ഹസനികൾ വിവിധ മേഖലകളിൽ സജീവമായി.</p>
+<p>ഈ നേട്ടങ്ങളെക്കുറിച്ച് ചോദിക്കുമ്പോൾ ശൈഖുനായുടെ മറുപടി വളരെ വിനയപൂർവ്വമായിരുന്നു:</p>
+<blockquote class="pull"><p>എല്ലാം റബ്ബിന്റെ സഹായം. അവന്റെ തൗഫീഖ്.</p></blockquote>
+<p>1996–97 കാലത്ത് സ്വന്തം നാടായ കൊമ്പത്ത് മർകസുൽ ഹിദായയ്ക്ക് തുടക്കം കുറിച്ചു. എട്ട് ഏക്കർ ക്യാമ്പസിൽ ഇംഗ്ലീഷ് മീഡിയം വിദ്യാഭ്യാസത്തോടൊപ്പം ഖുർആൻ ഹിഫ്ള് സംവിധാനം ഒരുക്കി. അന്നത്തെ സാഹചര്യത്തിൽ ഈ മാതൃക പ്രദേശത്ത് തന്നെ ശ്രദ്ധേയമായിരുന്നു. തഹ്ഫീളുൽ ഖുർആൻ, ദഅ്‌വ കോളേജ് എന്നിവ പ്രധാന സംരംഭങ്ങളായി.</p>
+<p>നാട്ടിന്റെ അടിസ്ഥാന സൗകര്യവികസനത്തിലും അദ്ദേഹം ഇടപെട്ടു. പ്രധാന റോഡിൽ നിന്ന് പള്ളിയിലേക്കും പള്ളിയിൽ നിന്ന് ഹിദായയിലേക്കും റോഡുകൾ ഉണ്ടാക്കുന്നതിനായി ഇടപെട്ടു.</p>
+<p>“ഇത് നടക്കില്ല” എന്ന് പലരും പറഞ്ഞിടത്ത് അദ്ദേഹം പ്രവർത്തനം തുടർന്നു. “KP Road” എന്ന പേരിൽ പരിഹസിച്ചവരും ഉണ്ടായിരുന്നു. എന്നാൽ ഭൂമി ഓരോ ഘട്ടമായി നേടിയെടുത്തു. സർക്കാർ പദ്ധതികളും ഫണ്ടുകളും ഉപയോഗപ്പെടുത്തി വികസനം സാധ്യമാക്കി.</p>
+<p>അദ്ദേഹത്തിന്റെ ജീവിതവീക്ഷണം ഇതായിരുന്നു:</p>
+<blockquote class="pull"><p>നടക്കില്ലെന്ന് വിചാരിച്ചാൽ ഒന്നും നടക്കില്ല...</p></blockquote>
+<div class="photo-pair"><figure class="photo"><img src="images/ev-silver-jubilee.webp" alt="മർകസുൽ ഹിദായ സമ്മേളനത്തിൽ ശൈഖുനാ" width="1080" height="1080" loading="lazy" decoding="async"><figcaption>മർകസുൽ ഹിദായ സിൽവർ ജൂബിലി പ്രഖ്യാപനവും നിസാ ഗാർഡൻ ഉദ്ഘാടന സമ്മേളനവും</figcaption></figure><figure class="photo"><img src="images/ev-marayamangalam.webp" alt="ശൈഖുനാ മാരായമംഗലം ഉസ്താദിനൊപ്പം" width="1080" height="810" loading="lazy" decoding="async"><figcaption>ജാമിഅ ഹസനിയ്യ ജനറൽ സെക്രട്ടറി എം.പി. അബ്ദുറഹ്മാൻ ഫൈസി മാരായമംഗലത്തിനൊപ്പം</figcaption></figure></div>
+<h2 id="s9"><span class="num" aria-hidden="true">9</span><span>തസവ്വുഫ്, ആത്മീയ മഹത്തുക്കൾ, ഫാത്തിമ ബീവി, ആത്മീയ അനുഭവങ്ങൾ</span></h2>
+<p>തസവ്വുഫിനെക്കുറിച്ചുള്ള ശൈഖുനായുടെ സമീപനം വളരെ പ്രത്യേകമായിരുന്നു. എല്ലാത്തിലേക്കും ചാടിക്കയറി അന്തരീക്ഷം മലിനമാക്കുന്നതല്ല യഥാർത്ഥ സൂഫി ജീവിതമെന്ന് അദ്ദേഹം വിശദീകരിച്ചു.</p>
+<p>കിതാബുൽ അദ്കിയയിലെ വരി അദ്ദേഹം ഉദ്ധരിക്കുമായിരുന്നു:</p>
+<blockquote class="ar-quote" dir="rtl" lang="ar"><p>فالعزلة الاولى اذا فسد الزمن</p></blockquote>
+<p>അതിന്റെ മലയാള വ്യാഖ്യാനം അദ്ദേഹം ഉടൻ പറഞ്ഞത്:</p>
+<blockquote class="pull"><p>കാലം പന്തിയല്ലെന്ന് കണ്ടാൽ മാറി നിൽക്കലാണ് ഭംഗി.</p></blockquote>
+<p>വിപുലമായ വായനയാണ് അദ്ദേഹത്തിന്റെ മലയാള ഭാഷാപാടവത്തിന് പിന്നിൽ.</p>
+<p>യൗവനകാലത്ത് അമ്പാംകുന്ന് ബീരാൻ ഔലിയ പാപ്പയെ പലതവണ കണ്ടുമുട്ടിയിരുന്നു. അദ്ദേഹത്തിന്റെ കൈ ശൈഖുനായുടെ തലയിൽ വെച്ച് നൽകിയ അനുഗ്രഹവും ഓർമ്മിക്കപ്പെടുന്നു.</p>
+<p>പൊട്ടച്ചിറ ഫാത്തിമ ബീവിയുമായി അദ്ദേഹത്തിന് പ്രത്യേക ആത്മബന്ധമുണ്ടായിരുന്നു. മകനെപ്പോലെയാണ് ബീവി ശൈഖുനായെ കണ്ടിരുന്നത്. പ്രധാന തീരുമാനങ്ങളിൽ “മൊയ്ല്യേര് പറയും പോലെ” എന്ന വിശ്വാസത്തോടെ മുന്നോട്ട് പോകുമായിരുന്നു.</p>
+<p>അൽ ഐനിലെ ഔഖാഫ് ഉദ്യോഗസ്ഥനായ ശൈഖ് ബഷീറിന് കടുത്ത വയറുവേദന ഉണ്ടായിരുന്ന സംഭവവും പറയപ്പെടുന്നു. മറശ്ശീലയ്ക്കപ്പുറത്ത് നിന്ന് ഫാത്തിമ ബീവി അദ്ദേഹത്തിന്റെ വടിയുപയോഗിച്ച് വയറിൽ അമർത്തിയെന്നും പിന്നീട് വേദന തിരിച്ചുവന്നില്ലെന്നും ശൈഖ് ബഷീർ പറഞ്ഞതായി വിവരണത്തിൽ പറയുന്നു:</p>
+<blockquote class="ar-quote" dir="rtl" lang="ar"><p>لم أجد الألم حتى الساعة</p></blockquote>
+<p>തുടർന്ന് അൽ ഐനിൽ പിരിവ് നടത്തുന്നതിനുള്ള പ്രത്യേക അനുമതി ലഭിക്കുകയും പുതിയ കെട്ടിടം ഉൾപ്പെടെ നിരവധി സ്ഥാപനപ്രവർത്തനങ്ങൾക്ക് അതുവഴി സഹായം ലഭിക്കുകയും ചെയ്തു.</p>
+<p>പൊട്ടച്ചിറയിലെ C.M. വലിയുല്ലാഹിയുമായി ബന്ധപ്പെട്ട മറ്റൊരു അനുഭവവും വിവരിക്കപ്പെടുന്നു. ഒരു ആൺകുട്ടി വേണമെന്ന ആഗ്രഹം പറഞ്ഞപ്പോൾ ശൈഖുനാ പറഞ്ഞു:</p>
+<blockquote class="pull"><p>ഒരാണല്ല, ഒരുപാട് ആൺകുട്ടികൾ ഉണ്ടായിക്കോട്ടെ.</p></blockquote>
+<p>പിന്നീട് അഞ്ച് പെൺമക്കൾക്കൊപ്പം അഞ്ച് ആൺമക്കൾ അദ്ദേഹത്തിന് ലഭിച്ചു.</p>
+<p>വല്ലപ്പുഴ ഉണ്ണീൻകുട്ടി മുസ്ലിയാരും C.M. വലിയുല്ലാഹിയും സഹപാഠികളായിരുന്നു. പൊട്ടച്ചിറയിൽ നിന്ന് പോകുമ്പോൾ C.M. വലിയുല്ലാഹി വാതിൽക്കൽ നിന്ന് “സിഹ്റ്! സിഹ്റ്! ഇനി വേണ്ട” എന്ന് പറഞ്ഞ സംഭവവും വിവരിക്കപ്പെടുന്നു. ഉണ്ണീൻകുട്ടി മുസ്ലിയാരുടെ കാലിലെ പഴയ മുറിവ് പിന്നീട് സുഖപ്പെട്ടതായും പറയപ്പെടുന്നു.</p>
+<p>യൂസുഫ് ഹാശിം അൽ റിഫാഈ, ആലുവായി അബൂബക്കർ മുസ്ലിയാർ, ചപ്പനങ്ങാടി ബാപ്പു മുസ്ലിയാർ, വടകര മുഹമ്മദ് ഹാജി തങ്ങൾ, കക്കിടിപ്പുറം അബൂബക്കർ മുസ്ലിയാർ തുടങ്ങിയ നിരവധി മഹത്തുക്കളുമായി ശൈഖുനായ്ക്ക് ബന്ധമുണ്ടായിരുന്നു.</p>
+<h2 id="s10"><span class="num" aria-hidden="true">10</span><span>ഇജാസത്തുകൾ, ശഅ്‌ർ മുബാറക്, യാത്രകൾ, ഹജ്ജ്–ഉംറ അനുഭവങ്ങൾ</span></h2>
+<p>കക്കിടിപ്പുറം അബൂബക്കർ മുസ്ലിയാരിൽ നിന്ന് പിന്നീട് ഇജാസത്തുകൾ ലഭിച്ചു. താജുൽ ഉലമ, സുൽത്താനുൽ ഉലമ തുടങ്ങിയ മഹത്തുക്കളിൽ നിന്നും ഇജാസത്തുകൾ ലഭിച്ചു.</p>
+<p>മദീനയിൽ നിന്നുള്ള ശഅ്‌ർ മുബാറക്കും ഘുബാർ ശരീഫും സൂക്ഷിക്കാനുള്ള ഉത്തരവാദിത്വവും അദ്ദേഹത്തിനുണ്ടായിരുന്നു.</p>
+<p>ദീനീ വിജ്ഞാനാന്വേഷണവും ആത്മീയ ബന്ധങ്ങളും വിപുലപ്പെടുത്തിക്കൊണ്ട് നിരവധി രാജ്യങ്ങളിലേക്ക് യാത്ര ചെയ്തു. ഗൾഫ് രാജ്യങ്ങൾ, ജോർദാൻ, ഫലസ്തീൻ, ഈജിപ്ത്, മൊറോക്കോ, ഇറാഖ്, ബുഖാറ, താഷ്കന്റ് തുടങ്ങിയ സ്ഥലങ്ങൾ സന്ദർശിച്ചു. പലതവണ ഹജ്ജും ഉംറയും നിർവഹിച്ചു.</p>
+<p>ഈ യാത്രകൾ അദ്ദേഹത്തിന്റെ വിജ്ഞാനപരമായ ലോകവീക്ഷണത്തെയും വിവിധ പണ്ഡിതന്മാരുമായുള്ള ബന്ധങ്ങളെയും കൂടുതൽ വിപുലമാക്കി.</p>
+<figure class="photo"><img src="images/ev-uae.webp" alt="ശൈഖുനാ യു.എ.ഇ. മതകാര്യ ഉപദേഷ്ടാവിനൊപ്പം" width="1079" height="1080" loading="lazy" decoding="async"><figcaption>യു.എ.ഇ.യിൽ നിന്നുള്ള മതകാര്യ ഉപദേഷ്ടാവിനൊപ്പം</figcaption></figure>
+<h2 id="s11"><span class="num" aria-hidden="true">11</span><span>തൂലിക, അറബി ഗ്രന്ഥങ്ങൾ, വിവർത്തനങ്ങൾ, ബുർദയും കവിതകളും</span></h2>
+<p>ശൈഖുനായുടെ പ്രവർത്തനരംഗം ദർസിലും സ്ഥാപനനിർമാണത്തിലും മാത്രം ഒതുങ്ങിയില്ല. എഴുത്തിന്റെ ലോകത്തും സജീവമായിരുന്നു.</p>
+<blockquote class="pull"><p>അൽ ഇർഫാദ്, അൽ മുബാറക്, പൂങ്കാവനം</strong> തുടങ്ങിയ പ്രസിദ്ധീകരണങ്ങളുമായി ബന്ധപ്പെട്ട് പ്രവർത്തിച്ചു. അൽ മുബാറകിന്റെ ആദ്യലക്കത്തിൽ ശൈഖ് സബൂനിയുടെ ഒരു ലേഖനം വിവർത്തനം ചെയ്തു. സമകാലിക ഫിഖ്ഹ് വിഷയങ്ങളിലും എഴുത്തിലൂടെ ഇടപെട്ടു.</p>
+<p>അറബിയിൽ:</p>
+<p><strong><span class="ar" dir="rtl" lang="ar">تاريخ الابرار ممن تدرس كتبهم في دار مليبار</span></p></blockquote>
+<ul class="titles" dir="rtl" lang="ar"><li>المولد العقد الثمين في مناقب الشيخ فريد</li>
+<li>مرجان الهدايا في مناقب الشيخ ميران اوليا</li>
+</ul><p>എന്നിവ രചിച്ചു.</p>
+<p>ഇബ്നു ഹജർ അൽ അസ്ഖലാനിയുടെ <strong>അൽ-മുനബ്ബിഹാത്ത്</strong> മലയാളത്തിലേക്ക് <strong>“ഉണർത്തു മൊഴികൾ”</strong> എന്ന പേരിൽ വിവർത്തനം ചെയ്തു. ഖസീദത്തുൽ ബുർദയും മലയാളത്തിലേക്ക് പരിഭാഷപ്പെടുത്തി.</p>
+<div class="verse" dir="rtl" lang="ar"><p>“അൻവാറുർ റഹ്മാൻ ഫീ തഫ്സീരിൽ ഖുർആൻ” എന്ന മലയാള ഖുർആൻ വ്യാഖ്യാനവും പൂങ്കാവനം ബുക്സ് പ്രസിദ്ധീകരിച്ചു. സാധാരണക്കാർക്കും എളുപ്പം മനസ്സിലാകുന്ന ലളിതമായ ഭാഷയായിരുന്നു അതിന്റെ പ്രത്യേകത.
+അദ്ദേഹത്തിന് നിമിഷങ്ങൾക്കുള്ളിൽ കവിതകൾ രചിക്കാനുള്ള കഴിവുമുണ്ടായിരുന്നു.
+കുവൈത്ത് സന്ദർശനത്തിനിടെ യൂസുഫ് ഹാശിം അൽ റിഫാഈയെ കാണാൻ പോയപ്പോൾ അദ്ദേഹം രചിച്ച വരികൾ:
+بمنصورية يوما اتيت واسئل من أرى اين الرفاعي</p><p>فقالوا الشيخ لا يخفى عليك كما البدر الجلي بدجى الليالي</p></div>
+<p>ഈ കവിത റിഫാഈയെ സന്തോഷിപ്പിക്കുകയും അദ്ദേഹം ശൈഖുനായ്ക്ക് ഒരു കമ്പിളിക്കുപ്പായം സമ്മാനിക്കുകയും ചെയ്തു.</p>
+<p>അറബിയിൽ നിരവധി മർസിയ്യകളും തഹ്നിയ്യാത്തുകളും രചിച്ചു.</p>
+<p>ബുർദാ വിവർത്തനത്തിന് പിന്നിലും ഒരു പ്രത്യേക കഥയുണ്ട്. ഹൈദരാബാദിലെ മൂസാ എക്സ്പോർട്ട് എന്ന വ്യക്തിക്ക് കുട്ടികളില്ലാത്ത സാഹചര്യത്തിൽ മദീനയിലെ ഒരു ശൈഖിനെ സമീപിച്ചപ്പോൾ, ഇന്ത്യയിലെ വിവിധ ഭാഷകളിൽ നബിയുടെ പ്രകീർത്തനങ്ങൾ പ്രചരിപ്പിക്കണമെന്ന് ഉപദേശിച്ചതായി വിവരിക്കുന്നു. വിവിധ ഭാഷകളിൽ വിവർത്തനങ്ങൾ പ്രസിദ്ധീകരിച്ചു. മലയാള വ്യാഖ്യാനത്തിനായി ഒരാൾ ശൈഖുനായെ സമീപിച്ചു. തുടർന്ന് ആ പ്രവർത്തനം നടന്നു. അതിന് ശേഷം അദ്ദേഹത്തിന് സന്താനങ്ങൾ ലഭിക്കുകയും പണ്ഡിതന്മാരെ ഹൈദരാബാദിലേക്ക് ക്ഷണിക്കുകയും ചെയ്തതായി ഈ ജീവചരിത്രവിവരണത്തിൽ പറയുന്നു.</p>
+<h2 id="s12"><span class="num" aria-hidden="true">12</span><span>ശിഷ്യന്മാർ, ദർസ് പാരമ്പര്യം, ഗുരുമഹത്വം</span></h2>
+<p>മുഹ്‌യിദ്ദീൻ മാലയിലെ വരികൾ ഉദ്ധരിച്ചുകൊണ്ടാണ് ശിഷ്യന്മാരുടെ മഹത്വം അവതരിപ്പിക്കുന്നത്. ഒരു പണ്ഡിതന്റെ മഹത്വം അദ്ദേഹത്തിന്റെ ശിഷ്യന്മാരിലൂടെ തിരിച്ചറിയാമെന്ന ആശയമാണ് അതിൽ.</p>
+<p>ശൈഖുനായുടെ ശിഷ്യപരമ്പര വളരെ വിശാലമാണ്. പരേതനായ P.M.K. ഫൈസി, സമസ്ത കേന്ദ്ര മുശാവറ അംഗം I.M.K. ഫൈസി കല്ലൂർ, K.K. അബൂബക്കർ ഫൈസി താഴേക്കോട്, സിറാജുദ്ദീൻ ഫൈസി വല്ലപ്പുഴ, യൂസുഫ് ഫൈസി കാഞ്ഞിരപ്പുഴ, അബ്ദുൽ ഹമീദ് അൻവരി മൈത്ര, സയ്യിദ് ഇസ്മാഈൽ തങ്ങൾ കുറുവമ്പലം, സയ്യിദ് ബയാർ തങ്ങൾ, U.P. അലി ഫൈസി വയനാട്, നാസറുദ്ദീൻ അൻവരി വടുതല, സാദിഖ് അൻവരി, സിദ്ദീഖ് അൻവരി കാഞ്ഞിരപ്പുഴ, മനു തിരൂർ, അബൂബക്കർ ഇരിങ്ങാട്ടിരി, വാരിയത്ത് മുഹമ്മദ് അലി അൻവരി, ബഷീർ അൽ ഹസനി കോതമംഗലം, ഹുസൈനാർ നദ്‌വി, മഹ്മൂദ് അൻവരി പോത്തംകണ്ടം തുടങ്ങി നിരവധി പേരുകൾ ഈ ശിഷ്യപരമ്പരയിൽ ഉൾപ്പെടുന്നു.</p>
+<p>1992 മുതൽ മൂന്ന് വർഷം ശൈഖുനായുടെ കീഴിൽ പഠിച്ച രചയിതാവ് ആ കാലഘട്ടത്തെ തന്റെ ജീവിതത്തിലെ ഏറ്റവും വലിയ നേട്ടമായി കണക്കാക്കുന്നു. പ്രത്യേകിച്ച് തഫ്സീർ ക്ലാസുകൾ ആഴമുള്ളതും കവിതാസമാനവുമായ അനുഭവമായിരുന്നുവെന്ന് അദ്ദേഹം വിവരിക്കുന്നു.</p>
+<p>1974-ൽ ആരംഭിച്ച ദർസ് ഇന്നും തുടരുന്നു. ഹസനിയ്യയിലും ഹിദായയിലും മാത്രമല്ല, മണ്ണാർക്കാട് വെള്ളിയാഴ്ച രാവിലെ നടക്കുന്ന പണ്ഡിത ദർസിലും അദ്ദേഹം വിജ്ഞാനം പകർന്നു. തുഹ്ഫതുൽ മുഹ്താജിന്റെ ദർസ് അമ്പത് വർഷത്തോട് അടുക്കുന്നുവെന്നത് ഈ ദർസ് പാരമ്പര്യത്തിന്റെ ദൈർഘ്യം വ്യക്തമാക്കുന്നു.</p>
+<figure class="photo"><img src="images/ev-sensoriyam.webp" alt="ദിറായ് സെൻസോറിയം പ്രഖ്യാപന വേദിയിൽ ശൈഖുനാ" width="1080" height="720" loading="lazy" decoding="async"><figcaption>ദിറായ് സെൻസോറിയം പ്രഖ്യാപനം, കോർണിഷ് മസ്ജിദ്, കടലുണ്ടി, 2026 ജനുവരി 29</figcaption></figure>
+<h2 id="s13"><span class="num" aria-hidden="true">13</span><span>ജീവിതദർശനം, ഉമ്മയുടെ ഉപദേശം, ആസൂത്രണം, ജീവിതത്തിലെ വഴിത്തിരിവുകൾ</span></h2>
+<p>ശൈഖുനായുടെ ജീവിതത്തിൽ മാതാവിന്റെ ഉപദേശങ്ങൾക്ക് വലിയ സ്ഥാനമുണ്ട്. ഒരിക്കലും ആത്മാഭിമാനം ഉപേക്ഷിക്കരുതെന്നും മറ്റുള്ളവരോട് പരാതിപ്പെടരുതെന്നും മാതാവ് ഉപദേശിച്ചു.</p>
+<p>അവൾ പറയുമായിരുന്നു:</p>
+<blockquote class="pull"><p>തവിട് നിന്നാലും തദ്ലിസ് വിടരുത്.</p></blockquote>
+<p>ഇവിടെ ‘തദ്ലിസ്’ എന്നത് പഴയ പ്രാദേശിക മലയാളപ്രയോഗത്തിൽ മാന്യതയെയും ആത്മാഭിമാനത്തെയും സൂചിപ്പിക്കുന്ന പദമായാണ് ഉപയോഗിക്കുന്നത്.</p>
+<p>കൊട്ടുമല ഉസ്താദ് നൽകിയ മറ്റൊരു ഉപദേശം:</p>
+<blockquote class="ar-quote" dir="rtl" lang="ar"><p>كن عند الله خير الناس وعند النفس شر الناس وعند الناس احد الناس</p></blockquote>
+<p>അല്ലാഹുവിന്റെ മുമ്പിൽ മനുഷ്യരിൽ ഏറ്റവും നല്ലവനായിരിക്കുക; സ്വന്തം കണ്ണിൽ ഏറ്റവും മോശം മനുഷ്യനായി സ്വയം കാണുക; ജനങ്ങൾക്കിടയിൽ സാധാരണ ഒരാളായി ജീവിക്കുക എന്ന ആശയമാണ് ഇതിലൂടെ നൽകുന്നത്.</p>
+<p>ജീവിതത്തിൽ ആസൂത്രണത്തിനും വലിയ പ്രാധാന്യം നൽകി. അദ്ദേഹം പറയുമായിരുന്നു:</p>
+<blockquote class="ar-quote" dir="rtl" lang="ar"><p>التدبير نصف العيش</p></blockquote>
+<p>ആസൂത്രണം ജീവിതത്തിന്റെ പകുതിയാണെന്ന ആശയം.</p>
+<p>മനഃശാസ്ത്രം പോലുള്ള ആധുനിക മേഖലകളിൽ “പ്ലാനിംഗ്” എന്ന ആശയം വ്യാപകമാകുന്നതിന് മുമ്പുതന്നെ ജീവിതത്തിൽ സാമ്പത്തിക ആസൂത്രണം പ്രയോഗിച്ചിരുന്നു. ചെറിയ ശമ്പളത്തിൽ നിന്ന് പണം മാറ്റിവെച്ച് കൃഷിഭൂമി വാങ്ങി. “ഇരിക്കാനൊരു പെരയായി. കുടിക്കാൻ കഞ്ഞിയുമായി” എന്ന ലളിതമായ ജീവിതദർശനവും അദ്ദേഹത്തിനുണ്ടായിരുന്നു.</p>
+<p>കടല വിറ്റ ബാലനിൽ നിന്ന് ആയിരങ്ങൾക്ക് തണലേകുന്ന ഒരു വൃക്ഷമായി വളർന്ന ജീവിതമാണിത്.</p>
+<p>കടലക്കച്ചവടത്തിലെ പരാജയപ്പെട്ട നമസ്കാരാനുഭവം, പെരിന്തൽമണ്ണ ബസ് സ്റ്റാൻഡിൽ ശംസുൽ ഉലമ ചോദിച്ച ചോദ്യം, ₹650 സർക്കാർ ജോലി ഉപേക്ഷിച്ച് ₹150 ദീനി സേവനം തെരഞ്ഞെടുത്ത തീരുമാനം, അൻവരിയ്യയിലേക്കുള്ള ക്ഷണം — ഇവയെല്ലാം അദ്ദേഹത്തിന്റെ ജീവിതത്തിലെ നിർണായക വഴിത്തിരിവുകളായി മാറി.</p>
+<p>മറ്റൊരു വഴിയെടുത്തിരുന്നെങ്കിൽ പെൻഷനും വിരമിക്കലും മാത്രം നിറഞ്ഞ ഒരു ജീവിതമായിരിക്കാം ഉണ്ടായിരുന്നത്. എന്നാൽ ആ വഴിത്തിരിവുകൾ അദ്ദേഹത്തെ ആയിരങ്ങൾക്ക് തണലേകുന്ന ഒരു വലിയ സേവനജീവിതത്തിലേക്കാണ് നയിച്ചത്.</p>
+<figure class="photo"><img src="images/ev-program.webp" alt="പ്രസംഗവേദിയിൽ ശൈഖുനാ" width="1080" height="810" loading="lazy" decoding="async"></figure>
+<h2 id="s14"><span class="num" aria-hidden="true">14</span><span>കുടുംബം, ഔദ്യോഗിക സ്ഥാനങ്ങൾ, ബഹുമതികൾ, “കൻസുൽ ഫുഖഹാ”, പാരമ്പര്യം, പ്രാർത്ഥന</span></h2>
+<p>ശൈഖുനായുടെ ഭാര്യ ഫാത്തിമ, പയ്യനടത്തെ മരവ്യാപാരി കുഞ്ഞപ്പയുടെ മൂത്ത മകളാണ്.</p>
+<p>അഞ്ച് ആൺമക്കളും അഞ്ച് പെൺമക്കളുമാണ് കുടുംബത്തിൽ.</p>
+<div class="family"><div><h3>ആൺമക്കൾ</h3><ul><li>ശഫീഖ് അലി അൽ ഹസനി</li><li>മുഹമ്മദ് നൗഫൽ അഴ്ഹരി സഖാഫി</li><li>മുഹമ്മദ് അമീൻ — ദുബൈ</li><li>മുഹമ്മദ് മൻസൂർ — റിയാദ്</li><li>മുഹമ്മദ് നുഅ്മാൻ — വിദ്യാർത്ഥി</li></ul></div><div><h3>പെൺമക്കൾ</h3><ul><li>സാജിദ റഹ്മത്ത്</li><li>ശാക്കിറ</li><li>നുസൈബ</li><li>സുമയ്യ</li><li>സഈദ</li></ul></div></div>
+<p>മരുമക്കളിൽ പരേതനായ ഇസ്മാഈൽ ഫൈസി — പാണ്ഡിക്കാട് ബാപ്പു മുസ്ലിയാരുടെ മകൻ, അബ്ദുസ്സമദ് സഖാഫി പൊന്നങ്കോട്, അബ്ദുറസാഖ് അൻവരി ചെറക്കാപറമ്പ്, സാദിഖ് സഖാഫി പെരിന്തട്ടിരി എന്നിവർ ഉൾപ്പെടുന്നു.</p>
+<p>ശൈഖുനാ സമസ്ത കേന്ദ്ര മുശാവറ അംഗം, സമസ്ത പാലക്കാട് ജില്ലാ പ്രസിഡന്റ്, ജാമിഅ ഹസനിയ്യ പ്രിൻസിപ്പൽ, കൊമ്പം മർകസുൽ ഹിദായ സെക്രട്ടറി എന്നീ നിലകളിൽ സേവനമനുഷ്ഠിച്ചു.</p>
+<p>മദീന അക്കാദമിയുടെ അഹ്മദുൽ ബുഖാരി അവാർഡ്, കൊടമ്പുഴ ദാറുൽ മആരിഫിന്റെ ഇമാം ഗസാലി അവാർഡ് തുടങ്ങിയ ബഹുമതികളും ലഭിച്ചു.</p>
+<p>സയ്യിദ് ഇബ്രാഹീം ഖലീലുൽ ബുഖാരി തങ്ങളാണ് അദ്ദേഹത്തിന് <strong>“കൻസുൽ ഫുഖഹാ”</strong> എന്ന വിശേഷണം നൽകിയത്.</p>
+<p>ഒരു ദർസ് വിദ്യാർത്ഥിയിൽ നിന്ന് ആരംഭിച്ച ജീവിതം, വിവിധ ഗുരുനാഥന്മാരുടെ ശിക്ഷണം, ജാമിഅ നൂരിയ്യയിലെ പഠനം, അൻവരിയ്യയിലെ ദീർഘകാല സേവനം, ഹസനിയ്യയുടെ നേതൃത്വം, മർകസുൽ ഹിദായയുടെ സ്ഥാപനം, നാടിന്റെ വികസനത്തിലെ ഇടപെടലുകൾ, രചനയും വിവർത്തനവും, ആത്മീയ മഹത്തുക്കളുമായുള്ള ബന്ധം, വിശാലമായ ശിഷ്യപരമ്പര, ദീർഘകാല ദർസ് — ഇങ്ങനെ പല തലങ്ങളിലൂടെ വികസിച്ച ഒരു ജീവിതമാണ് ശൈഖുനായുടേത്.</p>
+<div class="dua"><p>അദ്ദേഹത്തിന്റെ ആരോഗ്യത്തിനും ദീർഘായുസ്സിനും ദർസിനും ദീനി സേവനങ്ങൾക്കും കൂടുതൽ ബറക്കത്തിനും വേണ്ടി പ്രാർത്ഥിക്കാം. കുടുംബത്തിനും സന്താനങ്ങൾക്കും ശിഷ്യന്മാർക്കും അനുഗ്രഹം ലഭിക്കട്ടെ. മരണപ്പെട്ട മഹത്തുക്കളുടെ ദറജ ഉയർത്തപ്പെടട്ടെ. ജീവിച്ചിരിക്കുന്നവർക്ക് ദീർഘായുസ്സും നന്മയും നൽകപ്പെടട്ടെ. ഈ അനുഗ്രഹങ്ങളിൽ നമ്മെയും ഉൾപ്പെടുത്തട്ടെ.</p><p class="amin" dir="rtl" lang="ar">آمين يا رب العالمين.</p></div>
+    </article>
+  </div>
+</main>
+
+<!-- ============ BOOKS ============ -->
+<section class="books" id="books" aria-labelledby="booksTitle">
+  <div class="books-in">
+    <h2 id="booksTitle">പുസ്തകങ്ങൾ</h2>
+    <p class="lead">ശൈഖുനായുടെ രചനകളും വിവർത്തനങ്ങളും. ഓർഡർ ചെയ്യാനും വിവരങ്ങൾ അറിയാനും വാട്സാപ്പിൽ ബന്ധപ്പെടാം.</p>
+    <div class="book-list" id="bookList"></div>
+    <p class="books-note">ഓരോ ബട്ടണും ആ പുസ്തകത്തിന്റെ പേരോടെ വാട്സാപ്പ് സന്ദേശം തയ്യാറാക്കി തുറക്കും.</p>
+  </div>
+</section>
+
+<footer>
+  <p>ശൈഖുനാ കെ.പി. മുഹമ്മദ് മുസ്ലിയാർ കൊമ്പം</p>
+  <p><a href="#top">മുകളിലേക്ക്</a></p>
+</footer>
+
+<button class="top" id="toTop" type="button" aria-label="മുകളിലേക്ക്"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 15l6-6 6 6"/></svg></button>
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="ചിത്രം"><img alt=""><button type="button" aria-label="അടയ്ക്കുക">×</button></div>
+
+<script>
+(function(){
+'use strict';
+
+/* =========================================================
+   EDIT HERE
+   ========================================================= */
+var WHATSAPP_NUMBER = '918281245976';   // 91 = India country code + your number
+var WA_MESSAGE = function(bookName){
+  return 'Hello My Dear Ajash, I am interested in ' + bookName + '. Please share more details.';
+};
+// true  = visitors (e.g. from the QR code) land directly on the article; the hero stays just above.
+// false = page opens at the top with the hero.
+var LAND_ON_ARTICLE = true;
+
+// Books. To show a real cover, paste an image link in `cover`. Leave '' for an automatic cover.
+var BOOKS = [
+  { title:'ഉണർത്തു മൊഴികൾ', lang:'ml', kind:'മലയാള വിവർത്തനം', cover:'',
+    summary:'ഇബ്നു ഹജർ അൽ അസ്ഖലാനിയുടെ അൽ-മുനബ്ബിഹാത്ത് എന്ന ഗ്രന്ഥത്തിന്റെ മലയാള വിവർത്തനം.' },
+  { title:'ഖസീദത്തുൽ ബുർദ (മലയാള പരിഭാഷ)', lang:'ml', kind:'മലയാള പരിഭാഷ', cover:'',
+    summary:'നബി(സ്വ)യെ പ്രകീർത്തിക്കുന്ന ഖസീദത്തുൽ ബുർദയുടെ മലയാള പരിഭാഷ.' },
+  { title:'അൻവാറുർ റഹ്മാൻ ഫീ തഫ്സീരിൽ ഖുർആൻ', lang:'ml', kind:'ഖുർആൻ വ്യാഖ്യാനം', cover:'',
+    summary:'സാധാരണക്കാർക്കും എളുപ്പം മനസ്സിലാകുന്ന ലളിതമായ ഭാഷയിലുള്ള മലയാള ഖുർആൻ വ്യാഖ്യാനം. പ്രസാധനം: പൂങ്കാവനം ബുക്സ്.' },
+  { title:'تاريخ الابرار ممن تدرس كتبهم في دار مليبار', lang:'ar', kind:'അറബി രചന', cover:'',
+    summary:'മലബാറിൽ ഗ്രന്ഥങ്ങൾ പഠിപ്പിക്കപ്പെടുന്ന സച്ചരിതരായ പണ്ഡിതന്മാരുടെ ചരിത്രം പ്രമേയമാക്കിയ അറബി ഗ്രന്ഥം.' },
+  { title:'المولد العقد الثمين في مناقب الشيخ فريد', lang:'ar', kind:'അറബി രചന', cover:'',
+    summary:'ശൈഖ് ഫരീദിന്റെ മനാഖിബ് (മഹത്വങ്ങൾ) പ്രതിപാദിക്കുന്ന അറബി മൗലിദ് രചന.' },
+  { title:'مرجان الهدايا في مناقب الشيخ ميران اوليا', lang:'ar', kind:'അറബി രചന', cover:'',
+    summary:'ശൈഖ് മീറാൻ ഔലിയയുടെ മനാഖിബ് പ്രതിപാദിക്കുന്ന അറബി രചന.' }
+];
+/* ========================================================= */
+
+var $ = function(s,c){return (c||document).querySelector(s)};
+var $$ = function(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s))};
+var esc = function(s){return String(s).replace(/[&<>"']/g,function(m){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]})};
+
+/* ---------- Books ---------- */
+var WA_ICON = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.22 3.08.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35zM12.04 2C6.5 2 2 6.5 2 12.04c0 1.77.46 3.5 1.34 5.02L2 22l5.06-1.33a10 10 0 004.98 1.32C17.58 22 22 17.5 22 11.96 22 6.5 17.5 2 12.04 2zm0 18.2a8.2 8.2 0 01-4.18-1.14l-.3-.18-3 .79.8-2.93-.2-.3A8.2 8.2 0 1120.2 12c0 4.5-3.66 8.2-8.16 8.2z"/></svg>';
+var list = $('#bookList');
+BOOKS.forEach(function(b,i){
+  var ar = b.lang === 'ar';
+  var attr = ar ? ' dir="rtl" lang="ar"' : '';
+  var cover = b.cover
+    ? '<img class="cover" src="'+esc(b.cover)+'" alt="'+esc(b.title)+' — കവർ" loading="lazy" decoding="async">'
+    : '<div class="cover c'+(i%4)+(b.title.length>26?' long':'')+'" aria-hidden="true"><span class="ct"'+attr+'>'+esc(b.title)+'</span><small>കൊമ്പം ഉസ്താദ്</small></div>';
+  var href = 'https://wa.me/'+WHATSAPP_NUMBER+'?text='+encodeURIComponent(WA_MESSAGE(b.title));
+  var el = document.createElement('article');
+  el.className = 'book';
+  el.innerHTML = cover +
+    '<div class="info"><span class="kind">'+esc(b.kind)+'</span><h3'+attr+'>'+esc(b.title)+'</h3><p>'+esc(b.summary)+'</p></div>' +
+    '<a class="btn order" href="'+href+'" target="_blank" rel="noopener">'+WA_ICON+'<span>വാട്സാപ്പിൽ ഓർഡർ ചെയ്യുക</span></a>';
+  list.appendChild(el);
+});
+
+/* ---------- Scroll state: progress, active section, header collapse ---------- */
+var hdr = $('#hdr'), bar = $('#bar'), prose = $('#prose'), toTop = $('#toTop'), chips = $('#chips');
+var heads = $$('#prose h2'), booksEl = $('#books');
+var links = $$('[data-t]');
+var lastY = window.scrollY, ticking = false, skipCompact = false, curActive = null;
+
+function setActive(t){
+  if(t === curActive) return;
+  curActive = t;
+  links.forEach(function(a){
+    var on = a.getAttribute('data-t') === String(t);
+    a.classList.toggle('on', on);
+    if(on){ a.setAttribute('aria-current','true'); if(a.parentNode === chips){ chips.scrollTo({left:a.offsetLeft - (chips.clientWidth - a.offsetWidth)/2, behavior:'smooth'}); } }
+    else a.removeAttribute('aria-current');
+  });
+}
+function update(){
+  ticking = false;
+  var y = window.scrollY, vh = window.innerHeight;
+  var r = prose.getBoundingClientRect();
+  var p = Math.min(1, Math.max(0, (vh*0.5 - r.top) / r.height));
+  bar.style.transform = 'scaleX('+p+')';
+  toTop.classList.toggle('show', y > 900);
+
+  var cur = -1;
+  for(var i=0;i<heads.length;i++){ if(heads[i].getBoundingClientRect().top <= 150) cur = i; }
+  if(booksEl.getBoundingClientRect().top <= 190) cur = 'books';
+  setActive(cur === -1 ? 'top' : cur);
+
+  if(skipCompact){ skipCompact = false; lastY = y; return; }
+  if(Math.abs(y - lastY) > 8){
+    hdr.classList.toggle('compact', y > lastY && y > 240);
+    lastY = y;
+  }
+}
+window.addEventListener('scroll', function(){ if(!ticking){ ticking = true; requestAnimationFrame(update); } }, {passive:true});
+window.addEventListener('resize', update);
+toTop.addEventListener('click', function(){ window.scrollTo({top:0}); });
+
+/* ---------- Land directly on the article (QR-code visitors) ---------- */
+var userMoved = false;
+['touchstart','wheel','keydown','mousedown'].forEach(function(ev){ window.addEventListener(ev, function(){ userMoved = true; }, {passive:true, once:true}); });
+function landOnArticle(){
+  if(userMoved) return;
+  var el = $('#article-start');
+  var offset = window.innerWidth >= 1100 ? 84 : 104;
+  skipCompact = true;
+  window.scrollTo({top: el.getBoundingClientRect().top + window.scrollY - offset, behavior:'instant'});
+}
+if('scrollRestoration' in history){ history.scrollRestoration = 'auto'; }
+var nav = performance.getEntriesByType && performance.getEntriesByType('navigation')[0];
+var freshVisit = !nav || nav.type === 'navigate';
+if(LAND_ON_ARTICLE && freshVisit && (!location.hash || location.hash === '#article')){
+  landOnArticle();
+  window.addEventListener('load', function(){ landOnArticle(); });
+  if(document.fonts && document.fonts.ready){ document.fonts.ready.then(landOnArticle); }
+}
+update();
+
+/* ---------- In-article search ---------- */
+var sBox = $('#search'), sBtn = $('#searchBtn'), input = $('#q'), count = $('#count');
+var hits = [], idx = -1, timer;
+function openSearch(){ sBox.hidden = false; sBtn.setAttribute('aria-expanded','true'); input.focus(); input.select(); }
+function closeSearch(){ sBox.hidden = true; sBtn.setAttribute('aria-expanded','false'); input.value = ''; clearMarks(); paint(); }
+function clearMarks(){
+  $$('mark.hit', prose).forEach(function(m){ var p = m.parentNode; p.replaceChild(document.createTextNode(m.textContent), m); p.normalize(); });
+  hits = []; idx = -1;
+}
+function paint(){
+  hits.forEach(function(m,i){ m.classList.toggle('cur', i === idx); });
+  if(!input.value.trim() || input.value.trim().length < 2){ count.textContent = ''; return; }
+  count.textContent = hits.length ? (idx+1)+' / '+hits.length : 'ഫലമില്ല';
+}
+function go(n){
+  if(!hits.length) return;
+  idx = (n + hits.length) % hits.length;
+  paint();
+  hits[idx].scrollIntoView({block:'center', behavior:'smooth'});
+}
+function run(){
+  clearMarks();
+  var q = input.value.trim().normalize('NFC').toLowerCase();
+  if(q.length < 2){ paint(); return; }
+  var walker = document.createTreeWalker(prose, NodeFilter.SHOW_TEXT, null);
+  var nodes = [], n;
+  while((n = walker.nextNode())){ if(n.nodeValue.trim()) nodes.push(n); }
+  nodes.forEach(function(node){
+    if(hits.length >= 500) return;
+    var text = node.nodeValue, hay = text.toLowerCase(), pos = hay.indexOf(q);
+    if(pos === -1) return;
+    var frag = document.createDocumentFragment(), last = 0;
+    while(pos !== -1){
+      if(pos > last) frag.appendChild(document.createTextNode(text.slice(last,pos)));
+      var m = document.createElement('mark'); m.className = 'hit'; m.textContent = text.slice(pos,pos+q.length);
+      frag.appendChild(m); hits.push(m);
+      last = pos + q.length; pos = hay.indexOf(q,last);
+    }
+    if(last < text.length) frag.appendChild(document.createTextNode(text.slice(last)));
+    node.parentNode.replaceChild(frag, node);
+  });
+  if(hits.length){ idx = 0; paint(); hits[0].scrollIntoView({block:'center', behavior:'smooth'}); } else paint();
+}
+sBtn.addEventListener('click', function(){ sBox.hidden ? openSearch() : closeSearch(); });
+$('#closeSearch').addEventListener('click', closeSearch);
+$('#next').addEventListener('click', function(){ go(idx+1); });
+$('#prev').addEventListener('click', function(){ go(idx-1); });
+input.addEventListener('input', function(){ clearTimeout(timer); timer = setTimeout(run, 180); });
+input.addEventListener('keydown', function(e){
+  if(e.key === 'Enter'){ e.preventDefault(); if(!hits.length) run(); else go(e.shiftKey ? idx-1 : idx+1); }
+  if(e.key === 'Escape'){ closeSearch(); sBtn.focus(); }
+});
+document.addEventListener('keydown', function(e){
+  if((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'f' && window.innerWidth >= 1100){ e.preventDefault(); openSearch(); }
+});
+
+/* ---------- Photos: tap to enlarge ---------- */
+var lb = $('#lb'), lbImg = $('img', lb);
+$$('.photo img, .inst-card .ph img, .poster img').forEach(function(img){
+  img.style.cursor = 'zoom-in';
+  img.addEventListener('click', function(){
+    lbImg.alt = img.alt;
+    lbImg.src = img.getAttribute('data-full') || img.src;
+    lb.hidden = false;
+  });
+});
+function closeLb(){ lb.hidden = true; lbImg.removeAttribute('src'); }
+lb.addEventListener('click', closeLb);
+document.addEventListener('keydown', function(e){ if(e.key === 'Escape' && !lb.hidden){ closeLb(); } });
+
+/* ---------- Upcoming event card (hides itself after the event) ---------- */
+var EVENT_START = new Date('2026-10-02T00:00:00+05:30');
+var EVENT_END   = new Date('2026-10-04T00:00:00+05:30');
+var evBox = $('#event');
+(function(){
+  var now = new Date();
+  if(now >= EVENT_END) return;
+  var when = $('#evWhen'), txt;
+  if(now < EVENT_START){
+    var d = Math.ceil((EVENT_START - now) / 864e5);
+    txt = d <= 1 ? 'നാളെ ആരംഭിക്കും' : d + ' ദിവസം കൂടി';
+  } else txt = 'ഇപ്പോൾ നടക്കുന്നു';
+  when.textContent = txt;
+  evBox.hidden = false;
+})();
+
+/* ---------- Share ---------- */
+function shareIt(kind){
+  var url = location.href.split('#')[0] + '#article';
+  var title = 'ശൈഖുനാ കെ.പി. മുഹമ്മദ് മുസ്ലിയാർ കൊമ്പം';
+  var text = kind === 'event'
+    ? 'മർകസുൽ ഹിദായ, കൊമ്പം — ശരീഅത്ത് ബ്ലോക്ക് ഉദ്ഘാടനവും സ്വലാത്ത് വാർഷികവും. 2026 ഒക്ടോബർ 2, 3 (വെള്ളി, ശനി), ഹിദായ നഗർ, കൊമ്പം.'
+    : title + ' — ജീവിതാനുഭവങ്ങൾ';
+  if(navigator.share){ navigator.share({title:title, text:text, url:url}).catch(function(){}); return; }
+  window.open('https://wa.me/?text=' + encodeURIComponent(text + '\n' + url), '_blank', 'noopener');
+}
+$$('[data-share]').forEach(function(b){ b.addEventListener('click', function(){ shareIt(b.getAttribute('data-share')); }); });
+})();
+</script>
+</body>
+</html>
